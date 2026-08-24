@@ -1,0 +1,2761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRILOK Building Materials — Executive Product Catalogue 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+@page { size: 297mm 167.0625mm; margin: 0; }
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:      #071828;
+  --navy2:     #0B2340;
+  --gold:      #C9A84C;
+  --gold-lt:   #F0D98E;
+  --white:     #FFFFFF;
+  --off-white: #F5F6F8;
+  --text:      #0f1e2e;
+  --muted:     #5c7a96;
+  --border:    #e0e8f0;
+}
+
+html, body {
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  background: #0a1520;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+/* ── SCREEN TOOLBAR ── */
+.screen-toolbar {
+  position: fixed; top: 0; left: 0; right: 0; height: 52px; z-index: 9999;
+  background: var(--navy); border-bottom: 2px solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 24px;
+}
+.st-brand { font-size: 15px; font-weight: 800; color: #fff; }
+.st-brand em { color: var(--gold); font-style: normal; }
+.st-btns { display: flex; gap: 12px; }
+.st-btn {
+  padding: 8px 18px; border-radius: 6px; font-size: 13px; font-weight: 800;
+  cursor: pointer; border: none; text-decoration: none;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.st-btn-gold { background: var(--gold); color: var(--navy); }
+.st-btn-out { background: rgba(255,255,255,0.08); color: #fff; border: 1px solid rgba(255,255,255,0.2); }
+
+.deck-wrap {
+  padding-top: 72px; display: flex; flex-direction: column;
+  align-items: center; gap: 28px; padding-bottom: 56px;
+}
+
+/* ── BASE SLIDE ── */
+.mag-slide {
+  width: 297mm; height: 167.0625mm;
+  min-width: 297mm; max-width: 297mm;
+  min-height: 167.0625mm; max-height: 167.0625mm;
+  overflow: hidden; position: relative;
+  background: var(--white);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.55);
+  display: flex; flex-direction: column;
+  page-break-after: always; page-break-inside: avoid;
+}
+
+@media print {
+  body, html { background: #fff !important; padding: 0 !important; }
+  .screen-toolbar { display: none !important; }
+  .deck-wrap { padding: 0 !important; gap: 0 !important; }
+  .mag-slide { box-shadow: none !important; page-break-after: always !important; }
+}
+
+/* ── HEADER STRIP ── */
+.ms-header {
+  height: 38px; flex-shrink: 0;
+  background: var(--navy);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 2px solid var(--gold);
+}
+.ms-header-left { display: flex; align-items: center; gap: 12px; }
+.ms-logo {
+  width: 32px; height: 32px; border-radius: 6px;
+  border: 2px solid var(--gold); background: #fff; padding: 2px;
+}
+.ms-brand { font-size: 14.5px; font-weight: 900; color: #fff; letter-spacing: 1px; }
+.ms-brand-divider { color: rgba(255,255,255,0.25); font-size: 15px; margin: 0 2px; }
+.ms-cat-label { font-size: 12px; font-weight: 800; color: var(--gold); letter-spacing: 1.5px; text-transform: uppercase; }
+.ms-header-right { display: flex; align-items: center; gap: 16px; }
+.ms-contact { font-size: 11.5px; font-weight: 600; color: #8aaccc; }
+.ms-slide-num {
+  font-family: 'Space Grotesk', monospace; font-size: 18px; font-weight: 900;
+  color: rgba(201,168,76,0.5); line-height: 1;
+}
+
+/* ── TITLE BAND ── */
+.ms-titleband {
+  height: 48px; flex-shrink: 0;
+  background: var(--off-white);
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 20px;
+}
+.ms-slide-kicker { font-size: 11px; font-weight: 900; color: var(--gold); letter-spacing: 1.5px; text-transform: uppercase; }
+.ms-slide-title { font-size: 18px; font-weight: 900; color: var(--navy); line-height: 1.15; }
+.ms-titleband-right { display: flex; align-items: center; gap: 12px; }
+.ms-standards-chip {
+  font-size: 11px; font-weight: 800; color: var(--muted);
+  background: #e8f0f8; border: 1px solid #d0e0f0;
+  padding: 4px 10px; border-radius: 4px; letter-spacing: 0.5px;
+}
+.ms-brand-strip { display: flex; align-items: center; gap: 8px; }
+.ms-brand-pill {
+  height: 26px; padding: 2px 10px; border-radius: 4px;
+  background: #fff; border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+}
+.ms-brand-pill img { max-height: 20px; max-width: 70px; object-fit: contain; }
+
+/* ── PRODUCT GRID (4 CARDS — 2×2) ── */
+.ms-prod-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 12px;
+  padding: 12px 20px;
+  background: #f0f4f8;
+  overflow: hidden;
+}
+
+/* 3-card variant */
+.ms-prod-grid-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+/* ── PRODUCT CARD ── */
+.prod-card {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(7,24,40,0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.prod-img-wrap {
+  flex: 2;
+  position: relative;
+  background: #081b2e;
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+}
+.prod-img-wrap img {
+  width: 100%; height: 100%;
+  object-fit: contain;
+  padding: 8px;
+  background: #f8fafc;
+  transition: transform 0.2s;
+}
+.prod-img-placeholder {
+  width: 100%; height: 100%;
+  background: radial-gradient(circle at center, #0e2946 0%, #061524 100%);
+  display: flex; align-items: center; justify-content: center;
+}
+.prod-img-placeholder::after {
+  content: 'PRILOK CERTIFIED';
+  font-family: 'Space Grotesk', monospace;
+  font-size: 11px; font-weight: 900;
+  color: rgba(201,168,76,0.35);
+  letter-spacing: 2px;
+}
+.prod-img-overlay {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 5px 8px;
+  background: linear-gradient(to top, rgba(7,24,40,0.88) 0%, transparent 100%);
+  z-index: 2;
+}
+.prod-sku {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 11.5px; font-weight: 900; color: var(--gold);
+  letter-spacing: 0.5px;
+}
+.prod-unit-badge {
+  font-size: 10.5px; font-weight: 800; color: #ffffff;
+  background: rgba(7,24,40,0.85); padding: 2px 6px; border-radius: 3px;
+}
+
+.prod-text {
+  flex: 1.2;
+  padding: 8px 12px;
+  display: flex; flex-direction: column; justify-content: center;
+  border-top: 2px solid var(--gold);
+  background: #fff;
+  overflow: hidden;
+}
+.prod-name {
+  font-size: 14.5px; font-weight: 800; color: var(--text);
+  line-height: 1.25;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.prod-spec {
+  font-size: 11.5px; font-weight: 600; color: var(--muted);
+  margin-top: 3px; line-height: 1.35;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ── FOOTER STRIP ── */
+.ms-footer {
+  height: 24px; flex-shrink: 0;
+  background: var(--navy);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 20px;
+  font-size: 10.5px; font-weight: 700; color: #708aa4;
+}
+
+/* COVER SLIDE */
+.cover-slide {
+  background: var(--navy);
+  flex-direction: row;
+}
+.cover-overlay {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 80% 100% at 30% 50%, #0E2E52 0%, #071828 100%);
+  pointer-events: none;
+}
+.cover-noise {
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(201,168,76,0.03) 0, rgba(201,168,76,0.03) 1px,
+    transparent 1px, transparent 56px
+  );
+  pointer-events: none;
+}
+
+.cover-left {
+  position: relative; z-index: 2;
+  width: 52%;
+  padding: 22px 26px;
+  display: flex; flex-direction: column; justify-content: space-between;
+  border-right: 1px solid rgba(201,168,76,0.2);
+}
+.cover-logo-block { display: flex; align-items: center; gap: 14px; }
+.cover-logo {
+  width: 76px; height: 76px; border-radius: 12px;
+  border: 2.5px solid var(--gold); background: #fff; padding: 4px;
+  box-shadow: 0 4px 22px rgba(0,0,0,0.5);
+}
+.cover-brand-name { font-size: 30px; font-weight: 900; color: #fff; line-height: 1; letter-spacing: 2px; }
+.cover-brand-sub { font-size: 11.5px; font-weight: 800; color: var(--gold); letter-spacing: 2px; margin-top: 3px; }
+
+.cover-headline { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 12px 0 8px; }
+.cover-eyebrow { font-size: 11.5px; font-weight: 900; color: var(--gold); letter-spacing: 2px; display: block; margin-bottom: 8px; }
+.cover-h1 {
+  font-size: 40px; font-weight: 900; color: #fff;
+  line-height: 1.08; letter-spacing: 0.5px;
+}
+.cover-gold {
+  background: linear-gradient(135deg, #FFE082 0%, #C9A84C 50%, #A0752A 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.cover-desc {
+  font-size: 12px; color: #8cb2cd; line-height: 1.5; margin-top: 10px;
+}
+
+.cover-kpis { display: flex; gap: 0; align-items: center; }
+.kpi { display: flex; align-items: center; gap: 8px; padding: 0 16px 0 0; }
+.kpi:first-child { padding-left: 0; }
+.kpi-n { font-family: 'Space Grotesk', monospace; font-size: 26px; font-weight: 900; color: var(--gold); line-height: 1; }
+.kpi-l { font-size: 10.5px; font-weight: 700; color: #9bc0e2; line-height: 1.3; text-transform: uppercase; }
+.kpi-divider { width: 1px; height: 32px; background: rgba(201,168,76,0.25); margin-right: 16px; flex-shrink: 0; }
+
+.cover-contacts {
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 8px; padding: 10px 16px;
+  display: flex; flex-direction: column; gap: 5px;
+}
+.cc-row { display: flex; align-items: center; gap: 14px; }
+.cc-label { font-size: 10.5px; font-weight: 900; color: var(--gold); letter-spacing: 1px; min-width: 110px; }
+.cc-row strong { font-size: 12.5px; font-weight: 800; color: #fff; }
+
+.cover-right {
+  position: relative; z-index: 2;
+  flex: 1;
+  padding: 16px;
+}
+.cover-mosaic { display: flex; gap: 10px; height: 100%; }
+.cm-tall { flex: 1.3; }
+.cm-col-r { flex: 1; display: flex; flex-direction: column; gap: 10px; }
+.cm-col-r .cm-img { flex: 1; }
+.cm-img {
+  background-size: cover; background-position: center;
+  border-radius: 8px; border: 1.5px solid rgba(201,168,76,0.25);
+  position: relative; overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.45);
+}
+.cm-label {
+  position: absolute; bottom: 8px; left: 10px;
+  font-size: 11.5px; font-weight: 800;
+  color: #fff; background: rgba(7,24,40,0.85);
+  padding: 3px 10px; border-radius: 4px; border-left: 3px solid var(--gold);
+}
+
+/* BRAND SLIDE */
+.brand-slide { background: #fff; }
+.brand-slide-body {
+  flex: 1;
+  display: grid; grid-template-columns: 42% 58%;
+  overflow: hidden;
+}
+
+.brand-why-col {
+  background: var(--navy);
+  padding: 18px 22px;
+  display: flex; flex-direction: column; gap: 12px;
+  border-right: 2px solid var(--gold);
+}
+.bw-eyebrow { font-size: 11px; font-weight: 900; color: var(--gold); letter-spacing: 2px; }
+.bw-h2 { font-size: 24px; font-weight: 900; color: #fff; line-height: 1.15; }
+.bw-pillar { display: flex; gap: 14px; align-items: flex-start; flex: 1; }
+.bw-num {
+  font-family: 'Space Grotesk', monospace; font-size: 26px; font-weight: 900;
+  color: rgba(201,168,76,0.4); line-height: 1; flex-shrink: 0;
+}
+.bw-pillar h4 { font-size: 13.5px; font-weight: 800; color: #fff; margin-bottom: 3px; line-height: 1.25; }
+.bw-pillar p { font-size: 11.5px; color: #8cb2cd; line-height: 1.45; }
+
+.brand-matrix-col {
+  padding: 14px 18px;
+  display: flex; flex-direction: column; overflow: hidden;
+}
+.bm-head-row {
+  display: flex; justify-content: space-between; align-items: baseline;
+  border-bottom: 2px solid var(--navy); padding-bottom: 8px; margin-bottom: 10px; flex-shrink: 0;
+}
+.bm-head-row strong { font-size: 13px; font-weight: 900; color: var(--navy); }
+.bm-head-row span { font-size: 11px; font-weight: 800; color: var(--gold); }
+.bm-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px; flex: 1;
+}
+.bm-cell {
+  background: #f8fafc; border: 1px solid var(--border); border-radius: 6px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 3px; padding: 4px;
+}
+.bm-cell img { max-height: 22px; max-width: 85%; object-fit: contain; }
+.bm-cell span { font-size: 10px; font-weight: 800; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+
+/* CLOSING SLIDE */
+.closing-slide { background: var(--navy); }
+.closing-bg-img {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+  opacity: 0.15;
+}
+.closing-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(7,24,40,0.96) 0%, rgba(7,24,40,0.8) 100%);
+}
+.closing-inner {
+  position: relative; z-index: 2;
+  flex: 1; display: flex; flex-direction: column; justify-content: space-between;
+  padding: 20px 24px 16px;
+}
+.closing-brand-top { display: flex; align-items: center; gap: 14px; border-bottom: 1px solid rgba(201,168,76,0.25); padding-bottom: 12px; }
+.closing-logo { width: 52px; height: 52px; border-radius: 10px; border: 2px solid var(--gold); background: #fff; padding: 3px; }
+.closing-brand-name { font-size: 28px; font-weight: 900; color: #fff; line-height: 1; letter-spacing: 2px; }
+.closing-brand-sub { font-size: 11px; font-weight: 800; color: var(--gold); letter-spacing: 2px; margin-top: 3px; }
+.closing-headline { text-align: center; }
+.closing-headline h2 { font-size: 28px; font-weight: 900; color: #fff; line-height: 1.15; }
+.closing-headline p { font-size: 13px; color: #8cb2cd; margin-top: 6px; }
+.closing-cta-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.ctab {
+  background: rgba(255,255,255,0.05); border: 1.5px solid rgba(201,168,76,0.2);
+  border-radius: 8px; padding: 14px; display: flex; flex-direction: column; gap: 4px;
+}
+.ctab.ctab-gold { background: rgba(201,168,76,0.12); border-color: var(--gold); }
+.ctab-icon { font-size: 20px; }
+.ctab-label { font-size: 10.5px; font-weight: 900; color: var(--gold); letter-spacing: 0.8px; }
+.ctab-val { font-size: 14.5px; font-weight: 900; color: #fff; }
+.ctab-note { font-size: 10px; color: #7a9eb8; }
+.closing-foot {
+  display: flex; justify-content: space-between;
+  font-size: 10px; font-weight: 700; color: #5a7b99;
+  border-top: 1px solid rgba(255,255,255,0.08); padding-top: 8px;
+}
+</style>
+</head>
+<body>
+
+<div class="screen-toolbar">
+  <span class="st-brand">PRILOK <em>BUILDING MATERIALS TRADING LLC</em> &nbsp;·&nbsp; Executive Procurement Catalogue 2026</span>
+  <div class="st-btns">
+    <a href="index.html" class="st-btn st-btn-out">← Website</a>
+    <button onclick="window.print()" class="st-btn st-btn-gold">📥 Save as PDF</button>
+  </div>
+</div>
+
+<div class="deck-wrap">
+
+<div class="mag-slide cover-slide">
+  <div class="cover-overlay"></div>
+  <div class="cover-noise"></div>
+
+  <div class="cover-left">
+    <div class="cover-logo-block">
+      <img src="assets/prilok-logo.jpg" class="cover-logo" alt="PRILOK">
+      <div>
+        <div class="cover-brand-name">PRILOK</div>
+        <div class="cover-brand-sub">BUILDING MATERIALS TRADING LLC</div>
+      </div>
+    </div>
+    
+    <div class="cover-headline">
+      <span class="cover-eyebrow">EXECUTIVE PROCUREMENT DIRECTORY · 2026</span>
+      <h1 class="cover-h1">COMMERCIAL,<br>MEP &amp; CIVIL<br><span class="cover-gold">MATERIALS</span></h1>
+      <p class="cover-desc">Full-scope B2B wholesale supply for Tier-1 contractors, developers, and procurement teams across UAE &amp; GCC. DCL certified with full MTC documentation.</p>
+    </div>
+
+    <div class="cover-kpis">
+      <div class="kpi"><span class="kpi-n">18</span><span class="kpi-l">Engineering<br>Domains</span></div>
+      <div class="kpi-divider"></div>
+      <div class="kpi"><span class="kpi-n">177+</span><span class="kpi-l">Material<br>Lines</span></div>
+      <div class="kpi-divider"></div>
+      <div class="kpi"><span class="kpi-n">25+</span><span class="kpi-l">Global<br>Brands</span></div>
+      <div class="kpi-divider"></div>
+      <div class="kpi"><span class="kpi-n">24h</span><span class="kpi-l">Jobsite<br>Dispatch</span></div>
+    </div>
+
+    <div class="cover-contacts">
+      <div class="cc-row">
+        <span class="cc-label">VIP PROJECT DESK</span>
+        <strong>+971 56 567 0169</strong>
+      </div>
+      <div class="cc-row">
+        <span class="cc-label">EMAIL</span>
+        <strong>priya@prilok.com</strong>
+      </div>
+      <div class="cc-row">
+        <span class="cc-label">PORTAL</span>
+        <strong>www.prilok.ae</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="cover-right">
+    <div class="cover-mosaic">
+      <div class="cm-tall cm-img" style="background-image:url('assets/cover_montage/grinder.jpg')">
+        <div class="cm-label">Structural Steel &amp; Tools</div>
+      </div>
+      <div class="cm-col-r">
+        <div class="cm-img" style="background-image:url('assets/catalog_images/pip-gi.jpg')">
+          <div class="cm-label">MEP Piping Systems</div>
+        </div>
+        <div class="cm-img" style="background-image:url('assets/catalog_images/vlv-ball.jpg')">
+          <div class="cm-label">Valves &amp; Flow Control</div>
+        </div>
+        <div class="cm-img" style="background-image:url('assets/catalog_images/plm-faucets.jpg')">
+          <div class="cm-label">Sanitaryware &amp; Plumbing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+\n
+<div class="mag-slide brand-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">AUTHORIZED PARTNERS</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">02</span>
+    </div>
+  </div>
+
+  <div class="brand-slide-body">
+    <div class="brand-why-col">
+      <div class="bw-eyebrow">WHY CHOOSE PRILOK</div>
+      <h2 class="bw-h2">Your Complete<br>Supply Partner</h2>
+      
+      <div class="bw-pillar">
+        <div class="bw-num">01</div>
+        <div>
+          <h4>Certified Supply with Full MTC Documentation</h4>
+          <p>Complete compliance submittal packages per ASTM, BS EN, DIN, DCL and UAE Civil Defence — ensuring zero approval delays on consultant-reviewed projects.</p>
+        </div>
+      </div>
+      <div class="bw-pillar">
+        <div class="bw-num">02</div>
+        <div>
+          <h4>Direct Mill Pricing for Large BOQ Packages</h4>
+          <p>Preferred pricing frameworks for recurring project tenders, contractor supply agreements, and developer direct procurement schedules.</p>
+        </div>
+      </div>
+      <div class="bw-pillar">
+        <div class="bw-num">03</div>
+        <div>
+          <h4>Dubai Stockyard + 24h Delivery Across 7 Emirates</h4>
+          <p>Centralized heavy logistics hub with dedicated fleet and same-day urgent dispatch capability across the entire UAE.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-matrix-col">
+      <div class="bm-head-row">
+        <strong>AUTHORIZED MANUFACTURER & BRAND PARTNERS</strong>
+        <span>25+ Globally Certified Partners</span>
+      </div>
+      <div class="bm-grid">
+        
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/abb.png" alt="ABB">
+            <span>ABB</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/schneider-electric.png" alt="Schneider Electric">
+            <span>Schneider Electric</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/siemens.png" alt="Siemens">
+            <span>Siemens</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/ducab.png" alt="Ducab">
+            <span>Ducab</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/hepworth.png" alt="Hepworth">
+            <span>Hepworth</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/raktherm.png" alt="RAKtherm">
+            <span>RAKtherm</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/crane.png" alt="Crane">
+            <span>Crane</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/kitz.png" alt="KITZ">
+            <span>KITZ</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/itap.png" alt="ITAP">
+            <span>ITAP</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/danfoss.png" alt="Danfoss">
+            <span>Danfoss</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/rak-ceramics.png" alt="RAK Ceramics">
+            <span>RAK Ceramics</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/grohe.png" alt="Grohe">
+            <span>Grohe</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/geberit.png" alt="Geberit">
+            <span>Geberit</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/tyco.png" alt="Tyco">
+            <span>Tyco</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/victaulic.png" alt="Victaulic">
+            <span>Victaulic</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/naffco.png" alt="Naffco">
+            <span>Naffco</span>
+          </div>
+          <div class="bm-cell">
+            <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%2080%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2255%25%22%20font-family%3D%22Impact%2C%20sans-serif%22%20font-weight%3D%22900%22%20font-size%3D%2244%22%20fill%3D%22%23E30613%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3ESika%3C/text%3E%3C/svg%3E" alt="Sika">
+            <span>Sika</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/fosroc.png" alt="Fosroc">
+            <span>Fosroc</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/mapei.png" alt="Mapei">
+            <span>Mapei</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/jotun.png" alt="Jotun">
+            <span>Jotun</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/bosch.png" alt="Bosch">
+            <span>Bosch</span>
+          </div>
+          <div class="bm-cell">
+            <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%2080%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2255%25%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-weight%3D%22900%22%20font-size%3D%2252%22%20fill%3D%22%23FF0000%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20letter-spacing%3D%22-2%22%3E3M%3C/text%3E%3C/svg%3E" alt="3M">
+            <span>3M</span>
+          </div>
+          <div class="bm-cell">
+            <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20220%2080%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2255%25%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-weight%3D%22900%22%20font-size%3D%2232%22%20fill%3D%22%23E53935%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20letter-spacing%3D%221%22%3EHoneywell%3C/text%3E%3C/svg%3E" alt="Honeywell">
+            <span>Honeywell</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/knauf.png" alt="Knauf">
+            <span>Knauf</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/emirates-steel.png" alt="Emirates Steel">
+            <span>Emirates Steel</span>
+          </div>
+          <div class="bm-cell">
+            <img src="assets/brand_logos/normalized/armstrong.png" alt="Armstrong">
+            <span>Armstrong</span>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Authorised Distributor & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; VIP Desk: +971 56 567 0169</span>
+  </div>
+</div>
+\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">CORE CONSTRUCTION</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">03</span>
+    </div>
+  </div>
+  
+  <!-- SLIDE TITLE BAND -->
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">CORE CONSTRUCTION</div>
+      <h2 class="ms-slide-title">Civil & Building Materials</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">ASTM C150 · BS EN 197-1 · DCL Certified · Dubai Municipality</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/knauf.png" alt="Knauf"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/emirates-steel.png" alt="Emirates Steel"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/armstrong.png" alt="Armstrong"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 BIG PRODUCT CARDS — 2×2 -->
+  <div class="ms-prod-grid">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/civ-opc.jpg" alt="Cement - OPC (Ordinary Portland Cement)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">CIV-OPC</span>
+          <span class="prod-unit-badge">50kg Bags / Tons</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Cement - OPC (Ordinary Portland Cement)</h3>
+        <p class="prod-spec">ASTM C150 / BS EN 197-1 Grade 53.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/civ-src.jpg" alt="Cement - SRC (Sulphate Resisting Cement)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">CIV-SRC</span>
+          <span class="prod-unit-badge">50kg Bags / Tons</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Cement - SRC (Sulphate Resisting Cement)</h3>
+        <p class="prod-spec">BS EN 197-1 / ASTM C150 Type V.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/civ-white.jpg" alt="White Cement" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">CIV-WHITE</span>
+          <span class="prod-unit-badge">50kg Bags</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">White Cement</h3>
+        <p class="prod-spec">Whiteness > 90%, EN 197-1.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/civ-readymix.jpg" alt="Ready Mix Concrete (C20 to C80)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">CIV-READYMIX</span>
+          <span class="prod-unit-badge">M3</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Ready Mix Concrete (C20 to C80)</h3>
+        <p class="prod-spec">Dubai Municipality & DCL Certified.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">CORE CONSTRUCTION</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">04</span>
+    </div>
+  </div>
+  
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">CORE CONSTRUCTION — EXTENDED RANGE</div>
+      <h2 class="ms-slide-title">Civil & Building Materials</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">ASTM C1396 · BS 476 Fire Rated · NRC 0.65 Acoustic</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/knauf.png" alt="Knauf"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/armstrong.png" alt="Armstrong"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-prod-grid ms-prod-grid-3">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/civ-sand.jpg" alt="Sand & Aggregates" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">CIV-SAND</span>
+          <span class="prod-unit-badge">Tons / M3</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Sand & Aggregates</h3>
+        <p class="prod-spec">Sieve tested clean aggregates.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/civ-hollowblock.jpg" alt="Concrete Hollow Blocks (4", 6", 8")" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">CIV-HOLLOWBLOCK</span>
+          <span class="prod-unit-badge">Pieces / Pallets</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Concrete Hollow Blocks (4", 6", 8")</h3>
+        <p class="prod-spec">Thermal & Acoustic Insulation Rated.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/civ-solidblock.jpg" alt="Concrete Solid Blocks (4", 6", 8")" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">CIV-SOLIDBLOCK</span>
+          <span class="prod-unit-badge">Pieces / Pallets</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Concrete Solid Blocks (4", 6", 8")</h3>
+        <p class="prod-spec">Compressive strength 12.5 N/mm².</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">STRUCTURAL STEEL</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">05</span>
+    </div>
+  </div>
+  
+  <!-- SLIDE TITLE BAND -->
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">STRUCTURAL STEEL</div>
+      <h2 class="ms-slide-title">Structural Steel & Metal Products</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">ASTM A36 · EN 10025 S275/S355JR · BS 4483 · Full Mill Certification</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/emirates-steel.png" alt="Emirates Steel"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 BIG PRODUCT CARDS — 2×2 -->
+  <div class="ms-prod-grid">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/stl-struct.jpg" alt="Structural Steel Beams (UB / UC / IPE / HEA)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">STL-STRUCT</span>
+          <span class="prod-unit-badge">Metric Tons</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Structural Steel Beams (UB / UC / IPE / HEA)</h3>
+        <p class="prod-spec">S275JR / S355JR EN 10025.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/stl-msplates.jpg" alt="MS Plates" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">STL-MSPLATES</span>
+          <span class="prod-unit-badge">Sheets / Tons</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">MS Plates</h3>
+        <p class="prod-spec">ASTM A36 / S275JR.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/stl-gisheets.jpg" alt="GI Sheets (Galvanized Iron)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">STL-GISHEETS</span>
+          <span class="prod-unit-badge">Sheets / Coils</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">GI Sheets (Galvanized Iron)</h3>
+        <p class="prod-spec">ASTM A653 / EN 10346.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/stl-chequered.jpg" alt="Chequered Steel Plates" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">STL-CHEQUERED</span>
+          <span class="prod-unit-badge">Sheets / Tons</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Chequered Steel Plates</h3>
+        <p class="prod-spec">Hot rolled anti-skid floor plates.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">STRUCTURAL STEEL</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">06</span>
+    </div>
+  </div>
+  
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">STRUCTURAL STEEL — EXTENDED RANGE</div>
+      <h2 class="ms-slide-title">Structural Steel — Sections & Mesh</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">DIN 1026 · EN 10210/10219 · BS 4483 Welded Fabric</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/emirates-steel.png" alt="Emirates Steel"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-prod-grid ms-prod-grid-3">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/stl-angles.jpg" alt="Steel Angles (Equal & Unequal)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">STL-ANGLES</span>
+          <span class="prod-unit-badge">Tons / Lengths</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Steel Angles (Equal & Unequal)</h3>
+        <p class="prod-spec">S275JR EN 10025.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/stl-channels.jpg" alt="Steel Channels (UPN / PFC)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">STL-CHANNELS</span>
+          <span class="prod-unit-badge">Tons / Lengths</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Steel Channels (UPN / PFC)</h3>
+        <p class="prod-spec">DIN 1026 / EN 10025.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/stl-flatbars.jpg" alt="Flat Bars" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">STL-FLATBARS</span>
+          <span class="prod-unit-badge">Tons / Lengths</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Flat Bars</h3>
+        <p class="prod-spec">S275JR Grade.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">CHEMICALS & ADHESIVES</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">07</span>
+    </div>
+  </div>
+  
+  <!-- SLIDE TITLE BAND -->
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">CHEMICALS & ADHESIVES</div>
+      <h2 class="ms-slide-title">Construction Chemicals & Waterproofing</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">EN 12004 C2TE · ASTM C836 · ISO 9001 · Dubai Municipality</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%2080%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2255%25%22%20font-family%3D%22Impact%2C%20sans-serif%22%20font-weight%3D%22900%22%20font-size%3D%2244%22%20fill%3D%22%23E30613%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3ESika%3C/text%3E%3C/svg%3E" alt="Sika"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/fosroc.png" alt="Fosroc"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/mapei.png" alt="Mapei"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 BIG PRODUCT CARDS — 2×2 -->
+  <div class="ms-prod-grid">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/chm-membranes.jpg" alt="Waterproofing Membranes" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">CHM-MEMBRANES</span>
+          <span class="prod-unit-badge">Rolls</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Waterproofing Membranes</h3>
+        <p class="prod-spec">Elastomeric root resistant waterproofing.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/chm-cementitious.jpg" alt="Cementitious Waterproofing" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">CHM-CEMENTITIOUS</span>
+          <span class="prod-unit-badge">Kits / Bags</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Cementitious Waterproofing</h3>
+        <p class="prod-spec">Potable water tank approved waterproofing.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/chm-adhesives.jpg" alt="Tile Adhesives" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">CHM-ADHESIVES</span>
+          <span class="prod-unit-badge">25kg Bags</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Tile Adhesives</h3>
+        <p class="prod-spec">EN 12004 high bond tile adhesive.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/chm-grouts.jpg" alt="Grouts" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">CHM-GROUTS</span>
+          <span class="prod-unit-badge">Bags / Kits</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Grouts</h3>
+        <p class="prod-spec">High compressive non-shrink machinery grout.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">PAINTS & COATINGS</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">08</span>
+    </div>
+  </div>
+  
+  <!-- SLIDE TITLE BAND -->
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">PAINTS & COATINGS</div>
+      <h2 class="ms-slide-title">Protective Paints & Architectural Coatings</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">Low VOC · ISO 9001 · BS 6150 · ASTM D3960 · EN ISO 12944</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/jotun.png" alt="Jotun"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/fosroc.png" alt="Fosroc"></div><div class="ms-brand-pill"><img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%2080%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2255%25%22%20font-family%3D%22Impact%2C%20sans-serif%22%20font-weight%3D%22900%22%20font-size%3D%2244%22%20fill%3D%22%23E30613%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3ESika%3C/text%3E%3C/svg%3E" alt="Sika"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 BIG PRODUCT CARDS — 2×2 -->
+  <div class="ms-prod-grid">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/pnt-interior.jpg" alt="Interior Paint" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PNT-INTERIOR</span>
+          <span class="prod-unit-badge">Drums / Gallons</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Interior Paint</h3>
+        <p class="prod-spec">Low VOC washable interior paint.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/pnt-exterior.jpg" alt="Exterior Paint" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PNT-EXTERIOR</span>
+          <span class="prod-unit-badge">Drums</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Exterior Paint</h3>
+        <p class="prod-spec">UV resistant weather shield exterior paint.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/pnt-primers.jpg" alt="Primers" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PNT-PRIMERS</span>
+          <span class="prod-unit-badge">Drums</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Primers</h3>
+        <p class="prod-spec">Sealing primer for masonry & concrete.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/pnt-epoxypaint.jpg" alt="Epoxy Paint" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PNT-EPOXYPAINT</span>
+          <span class="prod-unit-badge">Drums</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Epoxy Paint</h3>
+        <p class="prod-spec">Chemical & abrasion resistant floor paint.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">ELECTRICAL POWER</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">09</span>
+    </div>
+  </div>
+  
+  <!-- SLIDE TITLE BAND -->
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">ELECTRICAL POWER</div>
+      <h2 class="ms-slide-title">Electrical Power & Distribution</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">BASEC Certified · BS 5467 · IEC 60947 · DEWA/SEWA/ADDC Approved</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/ducab.png" alt="Ducab"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/abb.png" alt="ABB"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/schneider-electric.png" alt="Schneider Electric"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/siemens.png" alt="Siemens"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 BIG PRODUCT CARDS — 2×2 -->
+  <div class="ms-prod-grid">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/ele-powercables.jpg" alt="Power Cables (Ducab)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">ELE-POWERCABLES</span>
+          <span class="prod-unit-badge">Meters / Reels</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Power Cables (Ducab)</h3>
+        <p class="prod-spec">BS 5467 / IEC 60502-1 compliant.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/ele-controlcables.jpg" alt="Control Cables" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">ELE-CONTROLCABLES</span>
+          <span class="prod-unit-badge">Meters / Reels</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Control Cables</h3>
+        <p class="prod-spec">BS 6344 / IEC 60227.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/ele-wires.jpg" alt="Flexible Wires" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">ELE-WIRES</span>
+          <span class="prod-unit-badge">Rolls</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Flexible Wires</h3>
+        <p class="prod-spec">BS 6004 DEWA approved building wires.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/ele-cabletrays.jpg" alt="Cable Trays" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">ELE-CABLETRAYS</span>
+          <span class="prod-unit-badge">Lengths</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Cable Trays</h3>
+        <p class="prod-spec">Hot dip galvanized HDG containment.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">ELECTRICAL POWER</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">10</span>
+    </div>
+  </div>
+  
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">ELECTRICAL POWER — EXTENDED RANGE</div>
+      <h2 class="ms-slide-title">Circuit Protection & Switchgear</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">IEC 60898 · IEC 60947 · IP65 Weatherproof</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/abb.png" alt="ABB"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/schneider-electric.png" alt="Schneider Electric"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/siemens.png" alt="Siemens"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-prod-grid ms-prod-grid-3">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/ele-dbs.jpg" alt="Distribution Boards (DB)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">ELE-DBS</span>
+          <span class="prod-unit-badge">Units</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Distribution Boards (DB)</h3>
+        <p class="prod-spec">DEWA / ADDC certified IP65 DBs.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/ele-mcb.jpg" alt="MCB (Miniature Circuit Breakers)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">ELE-MCB</span>
+          <span class="prod-unit-badge">Units</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">MCB (Miniature Circuit Breakers)</h3>
+        <p class="prod-spec">IEC 60898-1 10kA breakers.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/ele-mccb.jpg" alt="MCCB (Moulded Case Circuit Breakers)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">ELE-MCCB</span>
+          <span class="prod-unit-badge">Units</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">MCCB (Moulded Case Circuit Breakers)</h3>
+        <p class="prod-spec">IEC 60947-2 36kA / 50kA MCCBs.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">HVAC & VENTILATION</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">11</span>
+    </div>
+  </div>
+  
+  <!-- SLIDE TITLE BAND -->
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">HVAC & VENTILATION</div>
+      <h2 class="ms-slide-title">HVAC Ducting & Ventilation Systems</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">SMACNA · ASHRAE 90.1 · BS EN 1506 · Dubai Green Building</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/danfoss.png" alt="Danfoss"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/schneider-electric.png" alt="Schneider Electric"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 BIG PRODUCT CARDS — 2×2 -->
+  <div class="ms-prod-grid">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/hvc-ducts.jpg" alt="GI Ducts" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">HVC-DUCTS</span>
+          <span class="prod-unit-badge">SQM</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">GI Ducts</h3>
+        <p class="prod-spec">SMACNA / DW144 ventilation standards.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/hvc-flexducts.jpg" alt="Flexible Ducts" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">HVC-FLEXDUCTS</span>
+          <span class="prod-unit-badge">Rolls / Lengths</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Flexible Ducts</h3>
+        <p class="prod-spec">Class 1 fire rated flexible ducting.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/hvc-spiralducts.jpg" alt="Spiral Ducts" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">HVC-SPIRALDUCTS</span>
+          <span class="prod-unit-badge">Lengths</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Spiral Ducts</h3>
+        <p class="prod-spec">High pressure circular ductwork.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/hvc-firedampers.jpg" alt="Fire Dampers" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">HVC-FIREDAMPERS</span>
+          <span class="prod-unit-badge">Units</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Fire Dampers</h3>
+        <p class="prod-spec">UL 555 1.5hr / 3hr fire rated.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">FIRE PROTECTION</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">12</span>
+    </div>
+  </div>
+  
+  <!-- SLIDE TITLE BAND -->
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">FIRE PROTECTION</div>
+      <h2 class="ms-slide-title">Fire Protection & Life Safety Systems</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">UL Listed · FM Approved · UAE Civil Defence Certified · BS 5041</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/tyco.png" alt="Tyco"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/victaulic.png" alt="Victaulic"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/naffco.png" alt="Naffco"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 BIG PRODUCT CARDS — 2×2 -->
+  <div class="ms-prod-grid">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/fif-firevalves.jpg" alt="Fire Valves" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">FIF-FIREVALVES</span>
+          <span class="prod-unit-badge">Units</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Fire Valves</h3>
+        <p class="prod-spec">Civil Defence DCD/ADCD approved fire valves.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/fif-alarmcheck.jpg" alt="Alarm Check Valves" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">FIF-ALARMCHECK</span>
+          <span class="prod-unit-badge">Skids</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Alarm Check Valves</h3>
+        <p class="prod-spec">UL listed FM approved alarm valves.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/fif-sprinklers.jpg" alt="Sprinklers" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">FIF-SPRINKLERS</span>
+          <span class="prod-unit-badge">Pieces</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Sprinklers</h3>
+        <p class="prod-spec">UL listed & FM approved fire sprinklers.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/fif-hosereels.jpg" alt="Fire Hose Reels" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">FIF-HOSEREELS</span>
+          <span class="prod-unit-badge">Sets</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Fire Hose Reels</h3>
+        <p class="prod-spec">BS EN 671-1 approved hose reels.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">FLOW CONTROL</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">13</span>
+    </div>
+  </div>
+  
+  <!-- SLIDE TITLE BAND -->
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">FLOW CONTROL</div>
+      <h2 class="ms-slide-title">Valves & High-Pressure Flow Control</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">API 600 · API 609 · BS 5163 · ASME VIII · PN16/PN25/Class 150</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/kitz.png" alt="KITZ"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/crane.png" alt="Crane"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/danfoss.png" alt="Danfoss"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/itap.png" alt="ITAP"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 BIG PRODUCT CARDS — 2×2 -->
+  <div class="ms-prod-grid">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/vlv-ball.jpg" alt="Ball Valves" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">VLV-BALL</span>
+          <span class="prod-unit-badge">Units</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Ball Valves</h3>
+        <p class="prod-spec">1000 WOG full bore.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/vlv-gate.jpg" alt="Gate Valves (OS&Y / NRS)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">VLV-GATE</span>
+          <span class="prod-unit-badge">Units</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Gate Valves (OS&Y / NRS)</h3>
+        <p class="prod-spec">BS 5163 / API 600.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/vlv-globe.jpg" alt="Globe Valves" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">VLV-GLOBE</span>
+          <span class="prod-unit-badge">Units</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Globe Valves</h3>
+        <p class="prod-spec">BS 5152 throttling valves.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/vlv-bfly.jpg" alt="Butterfly Valves (Wafer & Lug)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">VLV-BFLY</span>
+          <span class="prod-unit-badge">Units</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Butterfly Valves (Wafer & Lug)</h3>
+        <p class="prod-spec">API 609 / EN 593.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">FLOW CONTROL</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">14</span>
+    </div>
+  </div>
+  
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">FLOW CONTROL — EXTENDED RANGE</div>
+      <h2 class="ms-slide-title">Control, Safety & Actuated Valves</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">ASME Sec VIII · BS EN 12266 · ISO 5211 · Fire-Safe Certified</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/danfoss.png" alt="Danfoss"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/kitz.png" alt="KITZ"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/crane.png" alt="Crane"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-prod-grid ms-prod-grid-3">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/vlv-nrv.jpg" alt="Check Valves (NRV - Non-Return Valves)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">VLV-NRV</span>
+          <span class="prod-unit-badge">Units</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Check Valves (NRV - Non-Return Valves)</h3>
+        <p class="prod-spec">BS 5153 / API 594.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/vlv-prv.jpg" alt="Pressure Reducing Valves (PRV)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">VLV-PRV</span>
+          <span class="prod-unit-badge">Units</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Pressure Reducing Valves (PRV)</h3>
+        <p class="prod-spec">Adjustable pressure control 1.5 - 12 Bar.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/vlv-psv.jpg" alt="Pressure Relief Valves (PSV)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">VLV-PSV</span>
+          <span class="prod-unit-badge">Units</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Pressure Relief Valves (PSV)</h3>
+        <p class="prod-spec">ASME Section VIII stamped.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">FLANGES & SEALING</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">15</span>
+    </div>
+  </div>
+  
+  <!-- SLIDE TITLE BAND -->
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">FLANGES & SEALING</div>
+      <h2 class="ms-slide-title">Flanges, Gaskets & Sealing Products</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">ANSI B16.5 · BS EN 1514 · ASME Class 150/300 · Full Mill Certification</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/crane.png" alt="Crane"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/kitz.png" alt="KITZ"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 BIG PRODUCT CARDS — 2×2 -->
+  <div class="ms-prod-grid">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/flg-weldneck.jpg" alt="Weld Neck Flanges" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">FLG-WELDNECK</span>
+          <span class="prod-unit-badge">Pieces</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Weld Neck Flanges</h3>
+        <p class="prod-spec">ASTM A105 forged steel flanges.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/flg-slipon.jpg" alt="Slip-On Flanges" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">FLG-SLIPON</span>
+          <span class="prod-unit-badge">Pieces</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Slip-On Flanges</h3>
+        <p class="prod-spec">ANSI B16.5 slip-on pipe flanges.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/flg-blind.jpg" alt="Blind Flanges" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">FLG-BLIND</span>
+          <span class="prod-unit-badge">Pieces</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Blind Flanges</h3>
+        <p class="prod-spec">Pipe end blanking forged flanges.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/flg-socketweld.jpg" alt="Socket Weld Flanges" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">FLG-SOCKETWELD</span>
+          <span class="prod-unit-badge">Pieces</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Socket Weld Flanges</h3>
+        <p class="prod-spec">Small bore high pressure piping flanges.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">FASTENERS & FIXINGS</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">16</span>
+    </div>
+  </div>
+  
+  <!-- SLIDE TITLE BAND -->
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">FASTENERS & FIXINGS</div>
+      <h2 class="ms-slide-title">Fasteners & Structural Fixings</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">DIN 933 · ISO 898-1 Grade 8.8/10.9 · ASTM A193 · CE Marked</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/emirates-steel.png" alt="Emirates Steel"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 BIG PRODUCT CARDS — 2×2 -->
+  <div class="ms-prod-grid">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/fst-hexbolts.jpg" alt="Hex Bolts" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">FST-HEXBOLTS</span>
+          <span class="prod-unit-badge">Boxes</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Hex Bolts</h3>
+        <p class="prod-spec">DIN 931 / DIN 933.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/fst-anchors.jpg" alt="Anchor Bolts" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">FST-ANCHORS</span>
+          <span class="prod-unit-badge">Boxes</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Anchor Bolts</h3>
+        <p class="prod-spec">ETA Option 1 cracked concrete approved.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/fst-studbolts.jpg" alt="Stud Bolts" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">FST-STUDBOLTS</span>
+          <span class="prod-unit-badge">Pieces</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Stud Bolts</h3>
+        <p class="prod-spec">High strength pressure vessel studding.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/fst-ubolts.jpg" alt="U-Bolts" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">FST-UBOLTS</span>
+          <span class="prod-unit-badge">Pieces</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">U-Bolts</h3>
+        <p class="prod-spec">Standard pipe clamp U-bolts.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">PIPE SUPPORTS</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">17</span>
+    </div>
+  </div>
+  
+  <!-- SLIDE TITLE BAND -->
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">PIPE SUPPORTS</div>
+      <h2 class="ms-slide-title">Pipe Support & Containment Systems</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">MSS SP-58 · Hot Dip Galvanized HDG · Unistrut Compatible</div>
+      
+    </div>
+  </div>
+
+  <!-- 4 BIG PRODUCT CARDS — 2×2 -->
+  <div class="ms-prod-grid">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/sup-clamps.jpg" alt="Pipe Clamps" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">SUP-CLAMPS</span>
+          <span class="prod-unit-badge">Pieces</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Pipe Clamps</h3>
+        <p class="prod-spec">Sound insulated acoustic pipe clamps.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/sup-hangers.jpg" alt="Pipe Hangers" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">SUP-HANGERS</span>
+          <span class="prod-unit-badge">Pieces</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Pipe Hangers</h3>
+        <p class="prod-spec">MSS SP-58 pipe hangers.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/sup-channels.jpg" alt="Channel Supports (Unistrut)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">SUP-CHANNELS</span>
+          <span class="prod-unit-badge">Lengths</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Channel Supports (Unistrut)</h3>
+        <p class="prod-spec">Hot dip galvanized HDG Unistrut framing.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/sup-springs.jpg" alt="Spring Supports" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">SUP-SPRINGS</span>
+          <span class="prod-unit-badge">Pieces</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Spring Supports</h3>
+        <p class="prod-spec">Chilled water pump vibration control.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">MEP PIPING</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">18</span>
+    </div>
+  </div>
+  
+  <!-- SLIDE TITLE BAND -->
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">MEP PIPING</div>
+      <h2 class="ms-slide-title">Pipes & Fluid Distribution</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">BS 1387 · ASTM A106 Gr B · ASTM A312 SS316L · WRAS Approved</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/raktherm.png" alt="RAKtherm"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/hepworth.png" alt="Hepworth"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 BIG PRODUCT CARDS — 2×2 -->
+  <div class="ms-prod-grid">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/pip-gi.jpg" alt="GI Pipes (Galvanized Iron)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PIP-GI</span>
+          <span class="prod-unit-badge">Meters / Lengths</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">GI Pipes (Galvanized Iron)</h3>
+        <p class="prod-spec">Hot dip galvanized pressure pipes.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/pip-ms.jpg" alt="MS Pipes (Mild Steel)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PIP-MS</span>
+          <span class="prod-unit-badge">Meters / Lengths</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">MS Pipes (Mild Steel)</h3>
+        <p class="prod-spec">ASTM A53 Grade B.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/pip-cs.jpg" alt="Carbon Steel Pipes" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PIP-CS</span>
+          <span class="prod-unit-badge">Meters / Lengths</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Carbon Steel Pipes</h3>
+        <p class="prod-spec">High pressure chilled water & oil piping.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/pip-ss.jpg" alt="Stainless Steel Pipes (304 / 316L)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PIP-SS</span>
+          <span class="prod-unit-badge">Meters / Lengths</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Stainless Steel Pipes (304 / 316L)</h3>
+        <p class="prod-spec">ASTM A312 sanitary piping.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">MEP PIPING</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">19</span>
+    </div>
+  </div>
+  
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">MEP PIPING — EXTENDED RANGE</div>
+      <h2 class="ms-slide-title">HDPE, PPR, uPVC & Copper Piping</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">ISO 4427 PE100 · DIN 8077/8078 · BS 3505 · ASTM B88 Copper</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/raktherm.png" alt="RAKtherm"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/hepworth.png" alt="Hepworth"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-prod-grid ms-prod-grid-3">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/pip-hdpe.jpg" alt="HDPE Pipes (PE100)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PIP-HDPE</span>
+          <span class="prod-unit-badge">Coils / Lengths</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">HDPE Pipes (PE100)</h3>
+        <p class="prod-spec">DIN 8074 / ISO 4427 water & gas lines.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/pip-ppr.jpg" alt="PPR Pipes (PN10 / PN16 / PN20)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PIP-PPR</span>
+          <span class="prod-unit-badge">Meters / Lengths</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">PPR Pipes (PN10 / PN16 / PN20)</h3>
+        <p class="prod-spec">DIN 8077/8078 food grade water pipes.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/pip-upvc.jpg" alt="uPVC Pipes (Pressure & Soil Waste)" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PIP-UPVC</span>
+          <span class="prod-unit-badge">Meters / Lengths</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">uPVC Pipes (Pressure & Soil Waste)</h3>
+        <p class="prod-spec">BS 3505 / BS EN 1401.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">PLUMBING & DRAINAGE</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">20</span>
+    </div>
+  </div>
+  
+  <!-- SLIDE TITLE BAND -->
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">PLUMBING & DRAINAGE</div>
+      <h2 class="ms-slide-title">Plumbing & Drainage Systems</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">DIN 8077/8078 · BS EN 1329 · BS EN 1401 · WRAS Approved</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/hepworth.png" alt="Hepworth"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/raktherm.png" alt="RAKtherm"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 BIG PRODUCT CARDS — 2×2 -->
+  <div class="ms-prod-grid">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/plm-ppr-sys.jpg" alt="PPR Hot & Cold Potable Water Piping Systems" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PLM-PPR-SYS</span>
+          <span class="prod-unit-badge">Mtrs</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">PPR Hot & Cold Potable Water Piping Systems</h3>
+        <p class="prod-spec">Conforms to DIN 8077/8078 & EN ISO 15874, SDR 6 / SDR 7.4 / SDR 11, Green / White, WR</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/plm-upvc-drain.jpg" alt="uPVC Underground & Soil Waste Drainage Systems" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PLM-UPVC-DRAIN</span>
+          <span class="prod-unit-badge">Mtrs</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">uPVC Underground & Soil Waste Drainage Systems</h3>
+        <p class="prod-spec">Conforms to BS EN 1329 (Above Ground) & BS EN 1401 (Underground), 32mm to 315mm, Duba</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/plm-pvc-pipes.jpg" alt="PVC High-Pressure Pipes & Heavy Conduits" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PLM-PVC-PIPES</span>
+          <span class="prod-unit-badge">Mtrs</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">PVC High-Pressure Pipes & Heavy Conduits</h3>
+        <p class="prod-spec">Conforms to BS 3505 / ASTM D1785 / BS 4607, Working Pressure up to 16 Bar (232 PSI), </p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/plm-traps-gullies.jpg" alt="Floor Gullies, Cleanouts & Odor-Seal Traps" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PLM-TRAPS-GULLIES</span>
+          <span class="prod-unit-badge">Pcs</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Floor Gullies, Cleanouts & Odor-Seal Traps</h3>
+        <p class="prod-spec">BS EN 1253 & DIN 19599, Anti-Odor Water Trap Seal 50mm, High Flow Discharge Rates, Re</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">WATER SYSTEMS</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">21</span>
+    </div>
+  </div>
+  
+  <!-- SLIDE TITLE BAND -->
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">WATER SYSTEMS</div>
+      <h2 class="ms-slide-title">Water Storage & Flow Measurement Systems</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">ISO 4064 · MID Approved · Class B High Precision</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/danfoss.png" alt="Danfoss"></div><div class="ms-brand-pill"><img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20220%2080%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2255%25%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-weight%3D%22900%22%20font-size%3D%2232%22%20fill%3D%22%23E53935%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20letter-spacing%3D%221%22%3EHoneywell%3C/text%3E%3C/svg%3E" alt="Honeywell"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 BIG PRODUCT CARDS — 2×2 -->
+  <div class="ms-prod-grid">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/plm-watermeters.jpg" alt="Digital & Mechanical Water Meters" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PLM-WATERMETERS</span>
+          <span class="prod-unit-badge">Pcs</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Digital & Mechanical Water Meters</h3>
+        <p class="prod-spec">Class B / ISO 4064 / MID Approved, DN15 to DN300, Cast Iron / Brass, High Accuracy Re</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">SANITARYWARE</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">22</span>
+    </div>
+  </div>
+  
+  <!-- SLIDE TITLE BAND -->
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">SANITARYWARE</div>
+      <h2 class="ms-slide-title">Sanitaryware & Architectural Fixtures</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">EN 997 · Estidama Pearl Rated · Water Sense · BS 1125 · CE</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/grohe.png" alt="Grohe"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/geberit.png" alt="Geberit"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/raktherm.png" alt="RAKtherm"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 BIG PRODUCT CARDS — 2×2 -->
+  <div class="ms-prod-grid">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/plm-faucets.jpg" alt="Commercial Faucets & Sensor Basin Mixers" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PLM-FAUCETS</span>
+          <span class="prod-unit-badge">Pcs</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Commercial Faucets & Sensor Basin Mixers</h3>
+        <p class="prod-spec">Solid Brass Chrome Plated / PVD Finish, WRAS Approved Aerators, Touchless Infrared Se</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/plm-showers.jpg" alt="Concealed Shower Mixers & Thermostatic Systems" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PLM-SHOWERS</span>
+          <span class="prod-unit-badge">Sets</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Concealed Shower Mixers & Thermostatic Systems</h3>
+        <p class="prod-spec">Thermostatic Anti-Scald Cartridge 38°C Safety Stop, 304 Stainless Steel / Brass, Wate</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/plm-basins.jpg" alt="Vitreous China Wash Basins & Vanity Sinks" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PLM-BASINS</span>
+          <span class="prod-unit-badge">Pcs</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Vitreous China Wash Basins & Vanity Sinks</h3>
+        <p class="prod-spec">Vitreous China Glazed Ceramic, Anti-Bacterial Hygiene Glaze, Overflow Hole, Conforms </p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/plm-closets.jpg" alt="Water Closets & Dual-Flush Concealed Cisterns" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PLM-CLOSETS</span>
+          <span class="prod-unit-badge">Sets</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Water Closets & Dual-Flush Concealed Cisterns</h3>
+        <p class="prod-spec">Rimless Vortex Flushing Technology, 3L/4.5L Dual Flush Water-Saving, Heavy Duty 400kg</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">SANITARYWARE</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">23</span>
+    </div>
+  </div>
+  
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">SANITARYWARE — EXTENDED RANGE</div>
+      <h2 class="ms-slide-title">Sanitaryware & Accessories</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">EN 997 · Water Sense · Chrome Plated Brass</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/grohe.png" alt="Grohe"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/geberit.png" alt="Geberit"></div><div class="ms-brand-pill"><img src="assets/brand_logos/normalized/raktherm.png" alt="RAKtherm"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-prod-grid ms-prod-grid-3">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/plm-sinks.jpg" alt="Stainless Steel Commercial & Pantry Kitchen Sinks" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PLM-SINKS</span>
+          <span class="prod-unit-badge">Pcs</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Stainless Steel Commercial & Pantry Kitchen Sinks</h3>
+        <p class="prod-spec">SUS 304 Grade Stainless Steel (1.2mm / 1.5mm Thickness), Satin / Brush Finish, Sound </p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/plm-accessories.jpg" alt="Architectural Bathroom & Washroom Accessories" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PLM-ACCESSORIES</span>
+          <span class="prod-unit-badge">Pcs</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Architectural Bathroom & Washroom Accessories</h3>
+        <p class="prod-spec">Solid Brass / 304 Stainless Steel, Concealed Screw Mounting, Corrosion-Resistant Chro</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">TOOLS & HARDWARE</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">24</span>
+    </div>
+  </div>
+  
+  <!-- SLIDE TITLE BAND -->
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">TOOLS & HARDWARE</div>
+      <h2 class="ms-slide-title">Power Tools & Hardware Equipment</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">Heavy Industrial Duty 110V/220V · CE Certified · ISO 9001</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/bosch.png" alt="Bosch"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 BIG PRODUCT CARDS — 2×2 -->
+  <div class="ms-prod-grid">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/tls-handtools.jpg" alt="Hand Tools" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">TLS-HANDTOOLS</span>
+          <span class="prod-unit-badge">Sets / Pieces</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Hand Tools</h3>
+        <p class="prod-spec">Chrome vanadium site hand tools.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/tls-powertools.jpg" alt="Power Tools" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">TLS-POWERTOOLS</span>
+          <span class="prod-unit-badge">Units</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Power Tools</h3>
+        <p class="prod-spec">Heavy duty 110V/220V power tools.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/tls-welding.jpg" alt="Welding Machines" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">TLS-WELDING</span>
+          <span class="prod-unit-badge">Units</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Welding Machines</h3>
+        <p class="prod-spec">Portable IGBT inverter welding plants.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/tls-grinders.jpg" alt="Grinding Machines" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">TLS-GRINDERS</span>
+          <span class="prod-unit-badge">Units</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Grinding Machines</h3>
+        <p class="prod-spec">High speed site grinding power tools.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">SITE SAFETY</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">25</span>
+    </div>
+  </div>
+  
+  <!-- SLIDE TITLE BAND -->
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">SITE SAFETY</div>
+      <h2 class="ms-slide-title">Personal Protective Equipment (PPE)</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">EN 397 · EN ISO 20345 · ANSI Z87.1 · NIOSH Certified</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%2080%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2255%25%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-weight%3D%22900%22%20font-size%3D%2252%22%20fill%3D%22%23FF0000%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20letter-spacing%3D%22-2%22%3E3M%3C/text%3E%3C/svg%3E" alt="3M"></div><div class="ms-brand-pill"><img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20220%2080%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2255%25%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-weight%3D%22900%22%20font-size%3D%2232%22%20fill%3D%22%23E53935%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20letter-spacing%3D%221%22%3EHoneywell%3C/text%3E%3C/svg%3E" alt="Honeywell"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 BIG PRODUCT CARDS — 2×2 -->
+  <div class="ms-prod-grid">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/ppe-helmets.jpg" alt="Safety Helmets" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PPE-HELMETS</span>
+          <span class="prod-unit-badge">Pieces</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Safety Helmets</h3>
+        <p class="prod-spec">Impact resistant site safety helmets.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/ppe-shoes.jpg" alt="Safety Shoes" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PPE-SHOES</span>
+          <span class="prod-unit-badge">Pairs</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Safety Shoes</h3>
+        <p class="prod-spec">EN ISO 20345 steel toe & anti-puncture sole.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/ppe-gloves.jpg" alt="Gloves" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PPE-GLOVES</span>
+          <span class="prod-unit-badge">Pairs / Packs</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Gloves</h3>
+        <p class="prod-spec">EN 388 mechanical protection gloves.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/ppe-goggles.jpg" alt="Safety Goggles & Face Shields" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">PPE-GOGGLES</span>
+          <span class="prod-unit-badge">Pieces</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Safety Goggles & Face Shields</h3>
+        <p class="prod-spec">ANSI Z87.1 eye protection.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide">
+  
+  <div class="ms-header">
+    <div class="ms-header-left">
+      <img src="assets/prilok-logo.jpg" class="ms-logo" alt="PRILOK">
+      <span class="ms-brand">PRILOK</span>
+      <span class="ms-brand-divider">|</span>
+      <span class="ms-cat-label">INDUSTRIAL SUPPLIES</span>
+    </div>
+    <div class="ms-header-right">
+      <span class="ms-contact">📞 +971 56 567 0169 &nbsp;•&nbsp; priya@prilok.com &nbsp;•&nbsp; www.prilok.ae</span>
+      <span class="ms-slide-num">26</span>
+    </div>
+  </div>
+  
+  <!-- SLIDE TITLE BAND -->
+  <div class="ms-titleband">
+    <div class="ms-titleband-left">
+      <div class="ms-slide-kicker">INDUSTRIAL SUPPLIES</div>
+      <h2 class="ms-slide-title">Industrial Plant & Maintenance Supplies</h2>
+    </div>
+    <div class="ms-titleband-right">
+      <div class="ms-standards-chip">ISO Precision · AWS A5.1 · EN 1492-1 Certified Slings</div>
+      
+      <div class="ms-brand-strip">
+        <div class="ms-brand-pill"><img src="assets/brand_logos/normalized/bosch.png" alt="Bosch"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 BIG PRODUCT CARDS — 2×2 -->
+  <div class="ms-prod-grid">
+    
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/ind-bearings.jpg" alt="Bearings" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">IND-BEARINGS</span>
+          <span class="prod-unit-badge">Pieces</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Bearings</h3>
+        <p class="prod-spec">ISO precision heavy industrial bearings.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/ind-lubricants.jpg" alt="Industrial Lubricants" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">IND-LUBRICANTS</span>
+          <span class="prod-unit-badge">Drums</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Industrial Lubricants</h3>
+        <p class="prod-spec">ISO VG 68 industrial lubricants.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/ind-electrodes.jpg" alt="Welding Electrodes" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">IND-ELECTRODES</span>
+          <span class="prod-unit-badge">Boxes</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Welding Electrodes</h3>
+        <p class="prod-spec">AWS A5.1 carbon steel electrodes.</p>
+      </div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-img-wrap">
+        <img src="assets/catalog_images/ind-wheels.jpg" alt="Cutting & Grinding Wheels" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="prod-img-overlay">
+          <span class="prod-sku">IND-WHEELS</span>
+          <span class="prod-unit-badge">Boxes</span>
+        </div>
+      </div>
+      <div class="prod-text">
+        <h3 class="prod-name">Cutting & Grinding Wheels</h3>
+        <p class="prod-spec">Heavy workshop metal cutting wheels.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-footer">
+    <span>PRILOK BUILDING MATERIALS TRADING LLC — Certified B2B Supply & Stockist</span>
+    <span>BOQ Response: 2–4 Business Hours &nbsp;·&nbsp; Daily Fleet Across All 7 Emirates</span>
+  </div>
+</div>\n
+<div class="mag-slide closing-slide">
+  <div class="closing-bg-img" style="background-image:url('assets/prilok-logo.jpg');"></div>
+  <div class="closing-overlay"></div>
+  
+  <div class="closing-inner">
+    <div class="closing-brand-top">
+      <img src="assets/prilok-logo.jpg" class="closing-logo" alt="PRILOK">
+      <div>
+        <div class="closing-brand-name">PRILOK BUILDING MATERIALS TRADING LLC</div>
+        <div class="closing-brand-sub">YOUR TRUSTED B2B MEP &amp; CIVIL SUPPLY PARTNER ACROSS UAE</div>
+      </div>
+    </div>
+    
+    <div class="closing-headline">
+      <h2>Let's Power Your Next Construction Milestone</h2>
+      <p>Send your project BOQ or tender specification list for immediate pricing submittals.</p>
+    </div>
+    
+    <div class="closing-cta-grid">
+      <div class="ctab ctab-gold">
+        <div class="ctab-icon">📞</div>
+        <div class="ctab-label">HOTLINE / WHATSAPP</div>
+        <div class="ctab-val">+971 56 567 0169</div>
+        <div class="ctab-note">24/7 Project Desk</div>
+      </div>
+      <div class="ctab">
+        <div class="ctab-icon">✉️</div>
+        <div class="ctab-label">PROJECT EMAIL</div>
+        <div class="ctab-val">priya@prilok.com</div>
+        <div class="ctab-note">Direct BOQ submittals</div>
+      </div>
+      <div class="ctab">
+        <div class="ctab-icon">🌐</div>
+        <div class="ctab-label">ONLINE CATALOGUE</div>
+        <div class="ctab-val">www.prilok.ae</div>
+        <div class="ctab-note">Digital product explorer</div>
+      </div>
+      <div class="ctab">
+        <div class="ctab-icon">📍</div>
+        <div class="ctab-label">HEADQUARTERS</div>
+        <div class="ctab-val">Dubai, UAE</div>
+        <div class="ctab-note">Delivery to all 7 Emirates</div>
+      </div>
+    </div>
+    
+    <div class="closing-foot">
+      <span>PRILOK BUILDING MATERIALS TRADING LLC · Commercial License &amp; DCL Certified</span>
+      <span>Dubai Stockyard &middot; Standard &amp; Express Site Dispatch</span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>
