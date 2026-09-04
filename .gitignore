@@ -5,6 +5,10 @@
 .tmp.driveupload/
 cloudflared.exe
 scratch/
+scratch_*.html
+canvas_exporter.html
+image_comparison.html
+image_gallery.html
 PRILOK_WEBSITE_PACKAGE/
 construction-mep-supply/
 godaddy_upload_ready/
@@ -16,3 +20,10 @@ extensions/
 *.txt
 *.bat
 *.ps1
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example

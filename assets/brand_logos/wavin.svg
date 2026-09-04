@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+      <rect width="200" height="60" rx="6" fill="#ffffff"/>
+      <g transform="translate(30, 10)">
+        <text x="70" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="26" fill="#004B87" text-anchor="middle">wavin</text>
+        <circle cx="112" cy="14" r="4" fill="#E30613"/>
+      </g>
+    </svg>

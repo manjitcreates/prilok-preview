@@ -1,627 +1,1899 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
+
+
 <head>
+
+
     <meta charset="UTF-8">
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRILOK — Official Visiting Card (Priya - Sales Head)</title>
+
+
+    <title>PRILOK Trading LLC | Official Visiting Card - Sales Team</title>
+
+
     
+
+
     <!-- Google Fonts -->
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+
     
+
+
     <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+    <script src="js/lucide.min.js"></script>
+
+
+
+
 
     <style>
+
+
         *, *::before, *::after {
+
+
             box-sizing: border-box;
+
+
             margin: 0;
+
+
             padding: 0;
+
+
         }
+
+
+
+
 
         :root {
+
+
             --navy: #0A2540;
+
+
             --navy-dark: #071A2E;
+
+
             --amber: #D9822B;
+
+
             --amber-light: #F59E0B;
+
+
             --slate: #1E293B;
+
+
             --muted: #64748B;
+
+
             --light-bg: #F8FAFC;
+
+
             --border: #E2E8F0;
+
+
         }
+
+
+
+
 
         body {
+
+
             font-family: 'Plus Jakarta Sans', sans-serif;
+
+
             background: #0B132B;
+
+
             color: #F8FAFC;
+
+
             min-height: 100vh;
+
+
             display: flex;
+
+
             flex-direction: column;
+
+
             align-items: center;
+
+
             padding: 30px 20px;
+
+
         }
 
-        /* ── TOP CONTROL BAR ── */
+
+
+
+
+        /* === TOP CONTROL BAR === */
+
+
         .controls {
+
+
             display: flex;
+
+
             align-items: center;
+
+
             gap: 14px;
+
+
             margin-bottom: 28px;
+
+
             background: rgba(255, 255, 255, 0.05);
+
+
             backdrop-filter: blur(12px);
+
+
             padding: 10px 20px;
+
+
             border-radius: 12px;
+
+
             border: 1px solid rgba(255, 255, 255, 0.1);
+
+
         }
+
+
+
+
 
         .btn {
+
+
             display: inline-flex;
+
+
             align-items: center;
+
+
             gap: 8px;
+
+
             padding: 10px 18px;
+
+
             border-radius: 8px;
+
+
             font-size: 13px;
+
+
             font-weight: 700;
+
+
             cursor: pointer;
+
+
             border: none;
+
+
             text-decoration: none;
+
+
             transition: all 0.2s ease;
+
+
         }
+
+
+
+
 
         .btn-gold {
+
+
             background: linear-gradient(135deg, #D9822B, #F59E0B);
+
+
             color: #0A2540;
+
+
             box-shadow: 0 4px 14px rgba(217, 130, 43, 0.35);
+
+
         }
+
+
         .btn-gold:hover {
+
+
             transform: translateY(-1px);
+
+
             box-shadow: 0 6px 20px rgba(217, 130, 43, 0.5);
+
+
         }
+
+
+
+
 
         .btn-outline {
+
+
             background: rgba(255, 255, 255, 0.08);
+
+
             color: #fff;
+
+
             border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        .btn-outline:hover {
-            background: rgba(255, 255, 255, 0.15);
+
+
         }
 
-        /* ── CARD PRESENTATION CONTAINER ── */
-        .stage {
-            display: flex;
-            flex-direction: column;
-            gap: 36px;
-            align-items: center;
+
+        .btn-outline:hover {
+
+
+            background: rgba(255, 255, 255, 0.15);
+
+
         }
+
+
+
+
+
+        /* === CARD PRESENTATION CONTAINER === */
+
+
+        .stage {
+
+
+            display: flex;
+
+
+            flex-direction: column;
+
+
+            gap: 36px;
+
+
+            align-items: center;
+
+
+        }
+
+
+
+
 
         .card-label {
+
+
             font-size: 12px;
+
+
             font-weight: 800;
+
+
             letter-spacing: 2px;
+
+
             text-transform: uppercase;
+
+
             color: #94A3B8;
+
+
             margin-bottom: 10px;
+
+
             text-align: center;
+
+
         }
 
-        /* ── STANDARD VISITING CARD DIMENSIONS (3.5" x 2.0" / 88.9mm x 50.8mm) ── */
+
+
+
+
+        /* === STANDARD VISITING CARD DIMENSIONS (3.5" x 2.0" / 88.9mm x 50.8mm) === */
+
+
         /* Screen preview scaled up 1.7x for high definition clarity (595px x 340px) */
+
+
         .card-box {
+
+
             width: 595px;
+
+
             height: 340px;
+
+
             border-radius: 12px;
+
+
             overflow: hidden;
+
+
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.1);
+
+
             background: #FFFFFF;
+
+
             color: var(--slate);
+
+
             position: relative;
+
+
             user-select: none;
+
+
         }
 
-        /* ── FRONT SIDE: CLASSIC UAE TRADING STYLE WITH BRAND ECOSYSTEM ── */
+
+
+
+
+        /* === FRONT SIDE: CLASSIC UAE TRADING STYLE WITH BRAND ECOSYSTEM === */
+
+
         .card-front {
+
+
             display: flex;
+
+
             flex-direction: column;
+
+
             height: 100%;
+
+
             background: #FFFFFF;
+
+
         }
+
+
+
+
 
         .front-top {
+
+
             display: flex;
+
+
             flex: 1;
+
+
             position: relative;
+
+
         }
+
+
+
+
 
         /* Orange Accent Left Bar */
+
+
         .accent-bar {
+
+
             width: 14px;
+
+
             background: linear-gradient(180deg, #D9822B 0%, #B45309 100%);
+
+
             height: 100%;
+
+
         }
+
+
+
+
 
         /* Left Side: Logo & Brand Focus */
+
+
         .front-left {
+
+
             width: 250px;
+
+
             padding: 16px 14px 8px 16px;
+
+
             display: flex;
+
+
             flex-direction: column;
+
+
             justify-content: flex-start;
+
+
             border-right: 1.5px solid #CBD5E1;
+
+
         }
+
+
+
+
 
         .front-logo {
+
+
             width: 100%;
+
+
             max-width: 205px;
+
+
             height: auto;
+
+
             margin-bottom: 8px;
+
+
         }
+
+
+
+
 
         .highlight-brands {
+
+
             display: flex;
+
+
             align-items: center;
+
+
             gap: 8px;
+
+
             margin-top: auto;
+
+
             margin-bottom: 6px;
+
+
             background: #F8FAFC;
+
+
             padding: 6px 8px;
+
+
             border-radius: 6px;
+
+
             border: 1px solid #E2E8F0;
+
+
         }
+
+
         .highlight-badge {
+
+
             font-size: 11px;
+
+
             font-weight: 800;
+
+
             color: var(--navy);
+
+
             text-transform: uppercase;
+
+
             letter-spacing: 0.5px;
+
+
         }
+
+
         .highlight-logos {
+
+
             display: flex;
+
+
             align-items: center;
+
+
             gap: 6px;
+
+
             flex: 1;
+
+
             justify-content: space-around;
+
+
         }
+
+
         .h-logo {
+
+
             height: 18px;
+
+
             max-width: 60px;
+
+
             object-fit: contain;
+
+
         }
+
+
+
+
 
         /* Right Side: Contact Person & Details */
+
+
         .front-right {
+
+
             flex: 1;
+
+
             padding: 16px 18px 8px 18px;
+
+
             display: flex;
+
+
             flex-direction: column;
+
+
             justify-content: flex-start;
+
+
         }
+
+
+
+
 
         .person-name {
+
+
             font-size: 24px;
+
+
             font-weight: 800;
+
+
             color: var(--navy);
+
+
             line-height: 1.1;
+
+
             letter-spacing: -0.3px;
+
+
         }
+
+
+
+
 
         .person-title {
+
+
             font-size: 14.5px;
+
+
             font-weight: 700;
+
+
             font-style: italic;
+
+
             color: var(--amber);
+
+
             margin-top: 2px;
+
+
             margin-bottom: 12px;
+
+
         }
+
+
+
+
 
         .contact-list {
+
+
             display: flex;
+
+
             flex-direction: column;
+
+
             gap: 5px;
+
+
             font-size: 13px;
+
+
             color: var(--slate);
+
+
         }
+
+
+
+
 
         .contact-item {
+
+
             display: flex;
+
+
             align-items: center;
+
+
             gap: 8px;
+
+
             line-height: 1.2;
+
+
         }
+
+
+
+
 
         .c-icon {
+
+
             width: 14px;
+
+
             height: 14px;
+
+
             color: var(--amber);
+
+
             flex-shrink: 0;
+
+
         }
+
+
+
+
 
         .c-text {
+
+
             font-weight: 600;
+
+
         }
+
+
         .c-text strong {
+
+
             font-weight: 800;
+
+
             color: var(--navy);
+
+
         }
+
+
+
+
 
         .address-box {
+
+
             margin-top: 6px;
+
+
             font-size: 12px;
+
+
             color: var(--muted);
+
+
             line-height: 1.25;
+
+
             border-top: 1px dashed #CBD5E1;
+
+
             padding-top: 5px;
+
+
         }
+
+
+
+
 
         /* Bottom Certified Brands Ticker Grid */
+
+
         .front-bottom {
+
+
             background: #F1F5F9;
+
+
             border-top: 1.5px solid #CBD5E1;
+
+
             padding: 5px 12px;
+
+
             display: flex;
+
+
             flex-direction: column;
+
+
             gap: 3px;
+
+
         }
+
+
+
+
 
         .brand-grid-title {
+
+
             font-size: 11px;
+
+
             font-weight: 800;
+
+
             text-transform: uppercase;
+
+
             letter-spacing: 1px;
+
+
             color: #64748B;
+
+
             text-align: center;
+
+
         }
+
+
+
+
 
         .brand-row {
+
+
             display: flex;
+
+
             align-items: center;
+
+
             justify-content: space-between;
+
+
             gap: 6px;
+
+
         }
+
+
+
+
 
         .b-badge {
+
+
             background: #FFFFFF;
+
+
             border: 1px solid #CBD5E1;
+
+
             border-radius: 3px;
+
+
             padding: 2px 6px;
+
+
             font-size: 11.5px;
+
+
             font-weight: 800;
+
+
             color: #1E293B;
+
+
             display: flex;
+
+
             align-items: center;
+
+
             justify-content: center;
+
+
             height: 19px;
+
+
             flex: 1;
+
+
             text-align: center;
+
+
             box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+
+
         }
+
+
         .b-badge.red { color: #DC2626; border-color: #FECACA; }
+
+
         .b-badge.blue { color: #0284C7; border-color: #BAE6FD; }
+
+
         .b-badge.green { color: #16A34A; border-color: #BBF7D0; }
+
+
         .b-badge.amber { color: #D97706; border-color: #FDE68A; }
 
-        /* ── BACK SIDE: LUXURY EXECUTIVE CORPORATE DESIGN ── */
+
+
+
+
+        /* === BACK SIDE: LUXURY EXECUTIVE CORPORATE DESIGN === */
+
+
         .card-back {
+
+
             background: linear-gradient(135deg, #071A2E 0%, #0A2540 50%, #0D3358 100%);
+
+
             color: #FFFFFF;
+
+
             height: 100%;
+
+
             display: flex;
+
+
             flex-direction: column;
+
+
             justify-content: space-between;
+
+
             padding: 24px 28px;
+
+
             position: relative;
+
+
             overflow: hidden;
+
+
         }
+
+
+
+
 
         .back-pattern {
+
+
             position: absolute;
+
+
             top: 0; right: 0; bottom: 0; left: 0;
+
+
             background-image: radial-gradient(rgba(217, 130, 43, 0.12) 1px, transparent 1px);
+
+
             background-size: 16px 16px;
+
+
             pointer-events: none;
+
+
         }
+
+
+
+
 
         .back-top {
+
+
             display: flex;
+
+
             align-items: center;
+
+
             justify-content: space-between;
+
+
             position: relative;
+
+
             z-index: 1;
+
+
         }
+
+
+
+
 
         .back-brand {
+
+
             font-size: 19px;
+
+
             font-weight: 900;
+
+
             letter-spacing: 1px;
+
+
             color: #FFFFFF;
+
+
         }
+
+
         .back-brand span {
+
+
             color: var(--amber);
+
+
         }
+
+
+
+
 
         .back-tagline {
+
+
             font-size: 12px;
+
+
             color: #94A3B8;
+
+
             letter-spacing: 1px;
+
+
             text-transform: uppercase;
+
+
         }
+
+
+
+
 
         .back-center {
+
+
             display: flex;
+
+
             align-items: center;
+
+
             justify-content: space-between;
+
+
             gap: 20px;
+
+
             position: relative;
+
+
             z-index: 1;
+
+
             margin: auto 0;
+
+
         }
+
+
+
+
 
         .categories-pill-grid {
+
+
             display: grid;
+
+
             grid-template-columns: repeat(2, 1fr);
+
+
             gap: 6px;
+
+
             flex: 1;
+
+
         }
+
+
+
+
 
         .cat-pill {
+
+
             background: rgba(255, 255, 255, 0.08);
+
+
             border: 1px solid rgba(255, 255, 255, 0.15);
+
+
             padding: 4px 10px;
+
+
             border-radius: 6px;
+
+
             font-size: 12px;
+
+
             font-weight: 700;
+
+
             color: #E2E8F0;
+
+
             display: flex;
+
+
             align-items: center;
+
+
             gap: 6px;
+
+
         }
+
+
         .cat-dot {
+
+
             width: 5px;
+
+
             height: 5px;
+
+
             background: var(--amber);
+
+
             border-radius: 50%;
+
+
         }
+
+
+
+
 
         .qr-box {
+
+
             background: #FFFFFF;
+
+
             padding: 8px;
+
+
             border-radius: 8px;
+
+
             display: flex;
+
+
             flex-direction: column;
+
+
             align-items: center;
+
+
             gap: 4px;
+
+
             box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+
+
         }
+
+
         .qr-img {
+
+
             width: 68px;
+
+
             height: 68px;
+
+
             object-fit: contain;
+
+
         }
+
+
         .qr-label {
+
+
             font-size: 11px;
+
+
             font-weight: 800;
+
+
             color: var(--navy);
+
+
             text-transform: uppercase;
+
+
             letter-spacing: 0.5px;
+
+
         }
+
+
+
+
 
         .back-bottom {
+
+
             display: flex;
+
+
             align-items: center;
+
+
             justify-content: space-between;
+
+
             border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+
             padding-top: 10px;
+
+
             position: relative;
+
+
             z-index: 1;
+
+
             font-size: 12px;
+
+
             color: #94A3B8;
-        }
-        .back-bottom strong {
-            color: #FFFFFF;
+
+
         }
 
-        /* ── PRINT RULES (Exact 3.5in x 2.0in) ── */
-        @media print {
-            body {
-                background: none !important;
-                padding: 0 !important;
-                margin: 0 !important;
-            }
-            .controls, .card-label, .back-card-container {
-                display: none !important;
-            }
-            @page {
-                size: 3.5in 2.0in;
-                margin: 0;
-            }
-            .stage {
-                gap: 0 !important;
-            }
-            .card-box {
-                width: 3.5in !important;
-                height: 2.0in !important;
-                box-shadow: none !important;
-                border-radius: 0 !important;
-                page-break-after: always;
-            }
-            .person-name { font-size: 15pt !important; }
-            .person-title { font-size: 10pt !important; margin-bottom: 6pt !important; }
-            .contact-list { font-size: 8.5pt !important; gap: 3pt !important; }
-            .address-box { font-size: 7.8pt !important; }
-            .b-badge { font-size: 7pt !important; height: 14pt !important; padding: 1pt 4pt !important; }
+
+        .back-bottom strong {
+
+
+            color: #FFFFFF;
+
+
         }
+
+
+
+
+
+        /* === PRINT RULES (Exact 3.5in x 2.0in) === */
+
+
+        @media print {
+
+
+            body {
+
+
+                background: none !important;
+
+
+                padding: 0 !important;
+
+
+                margin: 0 !important;
+
+
+            }
+
+
+            .controls, .card-label, .back-card-container {
+
+
+                display: none !important;
+
+
+            }
+
+
+            @page {
+
+
+                size: 3.5in 2.0in;
+
+
+                margin: 0;
+
+
+            }
+
+
+            .stage {
+
+
+                gap: 0 !important;
+
+
+            }
+
+
+            .card-box {
+
+
+                width: 3.5in !important;
+
+
+                height: 2.0in !important;
+
+
+                box-shadow: none !important;
+
+
+                border-radius: 0 !important;
+
+
+                page-break-after: always;
+
+
+            }
+
+
+            .person-name { font-size: 15pt !important; }
+
+
+            .person-title { font-size: 10pt !important; margin-bottom: 6pt !important; }
+
+
+            .contact-list { font-size: 8.5pt !important; gap: 3pt !important; }
+
+
+            .address-box { font-size: 7.8pt !important; }
+
+
+            .b-badge { font-size: 7pt !important; height: 14pt !important; padding: 1pt 4pt !important; }
+
+
+        }
+
+
     </style>
+
+
 </head>
+
+
 <body>
 
-    <!-- ── TOP CONTROLS ── -->
+
+
+
+
+    <!-- === TOP CONTROLS === -->
+
+
     <div class="controls">
+
+
         <a href="index.html" class="btn btn-outline">
+
+
             <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> Back to Website
+
+
         </a>
+
+
         <a href="PRILOK_Official_Visiting_Card.docx" download class="btn btn-outline">
+
+
             <i data-lucide="file-text" style="width:16px;height:16px;"></i> Download Word Template (.docx)
+
+
         </a>
+
+
         <button onclick="window.print()" class="btn btn-gold">
+
+
             <i data-lucide="printer" style="width:16px;height:16px;"></i> Print Visiting Card (3.5" x 2.0")
+
+
         </button>
+
+
     </div>
 
-    <!-- ── CARD STAGE ── -->
+
+
+
+
+    <!-- === CARD STAGE === -->
+
+
     <div class="stage">
 
+
+
+
+
         <!-- 1. FRONT SIDE CARD -->
+
+
         <div>
-            <div class="card-label">Front Side — Commercial UAE Trading Layout</div>
+
+
+            <div class="card-label">Front Side " Commercial UAE Trading Layout</div>
+
+
             <div class="card-box">
+
+
                 <div class="card-front">
+
+
                     <div class="front-top">
+
+
                         <!-- Left Amber Vertical Accent -->
+
+
                         <div class="accent-bar"></div>
 
+
+
+
+
                         <!-- Left Column: PRILOK Complete Logo & Tagline -->
+
+
                         <div class="front-left">
+
+
                             <img src="assets/prilok-logo-complete.jpg" alt="PRILOK Building Materials Trading LLC" class="front-logo">
+
+
                             
+
+
                             <!-- Highlight Certified Partner Brands -->
+
+
                             <div class="highlight-brands">
+
+
                                 <span class="highlight-badge">Stockist:</span>
+
+
                                 <div class="highlight-logos">
+
+
                                     <span style="font-size: 12px; font-weight: 900; color: #003399;">JOTUN</span>
+
+
                                     <span style="font-size: 12px; font-weight: 900; color: #C41230;">DUCAB</span>
+
+
                                     <span style="font-size: 12px; font-weight: 900; color: #D97706;">SIKA</span>
+
+
                                 </div>
+
+
                             </div>
+
+
                         </div>
+
+
+
+
 
                         <!-- Right Column: Priya - Sales Head & Contact Details -->
+
+
                         <div class="front-right">
+
+
                             <div class="person-name">Priya</div>
+
+
                             <div class="person-title">Sales Head</div>
 
+
+
+
+
                             <div class="contact-list">
+
+
                                 <div class="contact-item">
+
+
                                     <i data-lucide="map-pin" class="c-icon"></i>
-                                    <span class="c-text">P.O. Box 48512, Dubai, United Arab Emirates</span>
+
+
+                                    <span class="c-text">Building A1, 3rd Floor, Dubai South (DWC), Dubai, United Arab Emirates</span>
+
+
                                 </div>
+
+
                                 <div class="contact-item">
+
+
                                     <i data-lucide="phone-call" class="c-icon"></i>
+
+
                                     <span class="c-text"><strong>Tel:</strong> +971 4 344 4603 &nbsp;|&nbsp; <strong>Fax:</strong> +971 4 344 4604</span>
+
+
                                 </div>
+
+
                                 <div class="contact-item">
+
+
                                     <i data-lucide="smartphone" class="c-icon"></i>
+
+
                                     <span class="c-text"><strong>Mob / WhatsApp:</strong> +971 56 567 0169</span>
+
+
                                 </div>
+
+
                                 <div class="contact-item">
+
+
                                     <i data-lucide="mail" class="c-icon"></i>
-                                    <span class="c-text"><strong>Email:</strong> priya@prilok.com / sales@prilok.ae</span>
+
+
+                                    <span class="c-text"><strong>Email:</strong> sales@prilok.ae</span>
+
+
                                 </div>
+
+
                                 <div class="contact-item">
+
+
                                     <i data-lucide="globe" class="c-icon"></i>
+
+
                                     <span class="c-text"><strong>Web:</strong> www.prilok.ae</span>
+
+
                                 </div>
+
+
                             </div>
+
+
+
+
 
                             <div class="address-box">
-                                📍 Dubai Investment Park / Al Quoz Industrial, Dubai, UAE
+
+
+                                Building A1, 3rd Floor, Dubai South (DWC), Dubai, UAE
+
+
                             </div>
+
+
                         </div>
+
+
                     </div>
+
+
+
+
 
                     <!-- Bottom Authorized Brands Grid -->
+
+
                     <div class="front-bottom">
+
+
                         <div class="brand-grid-title">Authorized Brands & Certified Manufacturing Partners</div>
+
+
                         <div class="brand-row">
+
+
                             <div class="b-badge blue">JOTUN</div>
+
+
                             <div class="b-badge red">DUCAB</div>
+
+
                             <div class="b-badge amber">SIKA</div>
+
+
                             <div class="b-badge">FOSROC</div>
+
+
                             <div class="b-badge green">SCHNEIDER</div>
+
+
                             <div class="b-badge red">ABB</div>
+
+
                             <div class="b-badge blue">SIEMENS</div>
+
+
                         </div>
+
+
                         <div class="brand-row">
+
+
                             <div class="b-badge red">CRANE</div>
+
+
                             <div class="b-badge blue">KITZ</div>
+
+
                             <div class="b-badge">HEPWORTH</div>
+
+
                             <div class="b-badge green">COSMOPLAST</div>
+
+
                             <div class="b-badge blue">GROHE</div>
+
+
                             <div class="b-badge">KNAUF</div>
-                            <div class="b-badge red">NAFFCO</div>
+
+
+                            <div class="b-badge red">SHIELD</div>
+
+
                         </div>
+
+
                     </div>
+
+
                 </div>
+
+
             </div>
+
+
         </div>
+
+
+
+
 
         <!-- 2. BACK SIDE CARD -->
+
+
         <div class="back-card-container">
-            <div class="card-label">Back Side — Executive Corporate & Digital Catalog QR</div>
+
+
+            <div class="card-label">Back Side " Executive Corporate & Digital Catalog QR</div>
+
+
             <div class="card-box">
+
+
                 <div class="card-back">
+
+
                     <div class="back-pattern"></div>
 
+
+
+
+
                     <div class="back-top">
+
+
                         <div>
+
+
                             <div class="back-brand">PRILOK <span>TRADING LLC</span></div>
+
+
                             <div class="back-tagline">Civil, MEP & Industrial Supply Solutions</div>
+
+
                         </div>
+
+
                         <div style="text-align: right;">
+
+
                             <div style="font-size: 11.5px; font-weight: 800; color: var(--amber);">TRN: 100458291000003</div>
+
+
                             <div style="font-size: 11.5px; color: #94A3B8;">Commercial Reg: 894102</div>
+
+
                         </div>
+
+
                     </div>
+
+
+
+
 
                     <div class="back-center">
+
+
                         <div class="categories-pill-grid">
+
+
                             <div class="cat-pill"><div class="cat-dot"></div> PPR & uPVC Drainage</div>
+
+
                             <div class="cat-pill"><div class="cat-dot"></div> Valves & Flow Controls</div>
+
+
                             <div class="cat-pill"><div class="cat-dot"></div> Power Cables & Switchgear</div>
+
+
                             <div class="cat-pill"><div class="cat-dot"></div> Construction Chemicals</div>
+
+
                             <div class="cat-pill"><div class="cat-dot"></div> Fire Fighting & Safety PPE</div>
+
+
                             <div class="cat-pill"><div class="cat-dot"></div> Sanitaryware & Mixers</div>
+
+
                         </div>
+
+
+
+
 
                         <!-- QR Code to Online B2B Platform -->
+
+
                         <div class="qr-box">
+
+
                             <!-- High quality SVG QR graphic -->
+
+
                             <svg class="qr-img" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+
                                 <rect width="100" height="100" fill="white"/>
+
+
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10 10H40V40H10V10ZM15 15V35H35V15H15Z" fill="#0A2540"/>
+
+
                                 <rect x="20" y="20" width="10" height="10" fill="#0A2540"/>
+
+
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M60 10H90V40H60V10ZM65 15V35H85V15H65Z" fill="#0A2540"/>
+
+
                                 <rect x="70" y="20" width="10" height="10" fill="#0A2540"/>
+
+
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10 60H40V90H10V60ZM15 65V85H35V65H15Z" fill="#0A2540"/>
+
+
                                 <rect x="20" y="70" width="10" height="10" fill="#0A2540"/>
+
+
                                 <rect x="50" y="10" width="5" height="10" fill="#D9822B"/>
+
+
                                 <rect x="50" y="25" width="5" height="15" fill="#0A2540"/>
+
+
                                 <rect x="10" y="50" width="10" height="5" fill="#0A2540"/>
+
+
                                 <rect x="25" y="50" width="15" height="5" fill="#D9822B"/>
+
+
                                 <rect x="50" y="50" width="10" height="10" fill="#0A2540"/>
+
+
                                 <rect x="65" y="50" width="10" height="5" fill="#0A2540"/>
+
+
                                 <rect x="80" y="50" width="10" height="10" fill="#D9822B"/>
+
+
                                 <rect x="60" y="65" width="15" height="5" fill="#0A2540"/>
+
+
                                 <rect x="80" y="65" width="10" height="15" fill="#0A2540"/>
+
+
                                 <rect x="50" y="80" width="15" height="10" fill="#0A2540"/>
+
+
                                 <rect x="70" y="85" width="20" height="5" fill="#D9822B"/>
+
+
                             </svg>
+
+
                             <span class="qr-label">Scan for RFQ</span>
+
+
                         </div>
+
+
                     </div>
 
+
+
+
+
                     <div class="back-bottom">
+
+
                         <div>Dubai, UAE &bull; <strong>sales@prilok.ae</strong></div>
+
+
                         <div style="color: var(--amber); font-weight: 700;">www.prilok.ae</div>
+
+
                     </div>
+
+
                 </div>
+
+
             </div>
+
+
         </div>
+
+
+
+
 
     </div>
 
+
+
+
+
     <script>
+
+
         lucide.createIcons();
+
+
     </script>
+
+
 </body>
+
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

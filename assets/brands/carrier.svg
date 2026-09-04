@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+      <rect width="200" height="60" rx="6" fill="#ffffff"/>
+      <g transform="translate(30, 8)">
+        <ellipse cx="70" cy="22" rx="65" ry="18" fill="none" stroke="#003882" stroke-width="2.5"/>
+        <text x="70" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-style="italic" font-weight="900" font-size="20" fill="#003882" text-anchor="middle">Carrier</text>
+      </g>
+    </svg>

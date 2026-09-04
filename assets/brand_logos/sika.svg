@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+      <rect width="200" height="60" rx="6" fill="#ffffff"/>
+      <g transform="translate(35, 10)">
+        <polygon points="18,34 2,2 34,2" fill="#FFCD00" stroke="#D32F2F" stroke-width="1.5"/>
+        <polygon points="18,26 8,6 28,6" fill="#D32F2F"/>
+        <text x="80" y="27" font-family="'Plus Jakarta Sans', 'Arial Black', sans-serif" font-weight="900" font-size="24" fill="#D32F2F">Sika</text>
+      </g>
+    </svg>

@@ -22,20 +22,20 @@ This document summarizes the comprehensive enhancements, structural reorganizati
     2. **Steel & Structural Materials (`steel`):** Beams, Plates, GI Sheets, Chequered Plates, Angles, Channels, Flat Bars, Hollow Sections, Mesh, Binding Wire.
     3. **Construction Chemicals (`chemicals`):** Waterproofing, Adhesives, Grouts, Repair Mortars, Bonding Agents, Epoxy Flooring, Crack Injection, Sealants *(Sika, Fosroc, Mapei, Weber)*.
   * **Series 2: Architectural & Protective Paint**
-    4. **Paints & Finishing (`paints`):** Interior/Exterior Paint, Primers, Epoxy Paint, Decorative/Wood/Texture Coatings *(Jotun, National Paints, Nippon Paint, Berger, Asian Paints)*.
+    4. **Paints & Finishing (`paints`):** Interior/Exterior Paint, Primers, Epoxy Paint, Decorative/Wood/Texture Coatings *(Jotun, National Paints, Nippon Paint, Berger)*.
   * **Series 3: MEP Mechanical, Electrical & Flow Systems**
-    5. **Electrical Materials (`electrical`):** Power & Control Cables, Flexible Wires, Cable Trays, Trunking, Conduits, Junction Boxes, Glands, Lugs, DBs, MCB, MCCB, RCCB, Switchgear, Plugs, LED Lighting, Earthing *(ABB, Schneider Electric, Siemens, Legrand, Hager, Eaton, Ducab)*.
-    6. **HVAC Materials (`hvac`):** GI/Flex/Spiral Ducts, Fire/Volume Dampers, Diffusers, Grilles, Louvers, Copper Tubes, Refrigerant Lines & Gas, Supports, Insulation *(Carrier, Daikin, LG, York, Trane, Danfoss, Belimo)*.
-    7. **Fire Fighting Materials (`firefighting`):** Fire Valves, Alarm Check Valves, Sprinklers, Hose Reels, Landing Valves, Extinguishers, Alarm Accessories *(Tyco, Victaulic, Viking, Rapidrop, Naffco)*.
-    8. **Valves & Flow Control Products (`valves`):** 24 specialized valve lines *(Crane, ITAP, KITZ, AVK, KSB, Danfoss, Honeywell, Belimo, Spirax Sarco, Watts, etc.)*.
+    5. **Electrical Materials (`electrical`):** Power & Control Cables, Flexible Wires, Cable Trays, Trunking, Conduits, Junction Boxes, Glands, Lugs, DBs, MCB, MCCB, RCCB, Switchgear, Plugs, LED Lighting, Earthing *(ABB, Schneider Electric, Siemens, Eaton, Ducab)*.
+    6. **HVAC Materials (`hvac`):** GI/Flex/Spiral Ducts, Fire/Volume Dampers, Diffusers, Grilles, Louvers, Copper Tubes, Refrigerant Lines & Gas, Supports, Insulation *(Carrier, Daikin, LG, York, Trane, Danfoss)*.
+    7. **Fire Fighting Materials (`firefighting`):** Fire Valves, Alarm Check Valves, Sprinklers, Hose Reels, Landing Valves, Extinguishers, Alarm Accessories *(Tyco, Shield)*.
+    8. **Valves & Flow Control Products (`valves`):** 24 specialized valve lines *(Crane, ITAP, KITZ, AVK, KSB, Danfoss, Honeywell, Spirax Sarco, Watts, etc.)*.
     9. **Flanges & Gaskets (`flanges`):** WN, SO, Blind, SW, Threaded, Lap Joint, Rubber, Spiral Wound, PTFE, Ring Gaskets.
     10. **Fasteners (`fasteners`):** Hex/Anchor/Stud/U-Bolts, Nuts, Washers, Screws, Threaded Rods, Chemical Anchors, Rivets.
     11. **Pipe Support System (`pipesupport`):** Clamps, Hangers, Strut Channels, Springs, U-Clamps, Beam Clamps, Rods, Rubber Supports.
   * **Series 4: Plumbing, Drainage & Sanitaryware**
-    12. **Pipes & Fittings (`pipes`):** GI, MS, Carbon Steel, SS, HDPE, PPR, uPVC, CPVC, PVC, Copper Pipes, Fittings, Flanges, Flexible Hoses *(Hepworth, Wavin, RAKtherm, Aquatherm, GF, National Plastic)*.
+    12. **Pipes & Fittings (`pipes`):** GI, MS, Carbon Steel, SS, HDPE, PPR, uPVC, CPVC, PVC, Copper Pipes, Fittings, Flanges, Flexible Hoses *(Hepworth, Wavin, RAKtherm, Aquatherm, GF, Shield)*.
     13. **Plumbing & Drainage Systems (`plumbing`):** PPR Potable Water Piping Systems, uPVC Underground & Soil Drainage, PVC Pressure Pipes & Conduits, Floor Gullies & Traps, Solvent Cements & Cleaners.
     14. **Water Storage & Pumping Systems (`water`):** Digital Ultrasonic Flow Meters, Mechanical Multi-Jet & Woltman Bulk Water Meters *(Danfoss, Watts, Honeywell)*.
-    15. **Sanitaryware & Fixtures (`sanitary`):** Commercial Faucets & Sensor Basin Mixers, Concealed Shower Mixers, Vitreous China Basins, Water Closets, Sinks, Bathroom Accessories *(Grohe, Geberit, RAK Ceramics, Kohler, Ideal Standard)*.
+    15. **Sanitaryware & Fixtures (`sanitary`):** Commercial Faucets & Sensor Basin Mixers, Concealed Shower Mixers, Vitreous China Basins, Water Closets, Sinks, Bathroom Accessories *(Grohe, Geberit, RAK Ceramics, Kohler)*.
   * **General Site, Safety & Industrial Maintenance**
     16. **Hardware & Tools (`tools`):** Hand/Power Tools, Welders, Grinders, Drills, Measuring Tools, Cutting Discs, Ladders *(Bosch, Makita, DeWalt, Stanley, Ingco, Total Tools)*.
     17. **Safety Products (PPE) (`ppe`):** Helmets, Shoes, Gloves, Goggles, Vests, Ear Protection, Respirators, Harnesses, Traffic Cones *(3M, Honeywell, Uvex, MSA Safety, Delta Plus)*.
@@ -45,7 +45,7 @@ This document summarizes the comprehensive enhancements, structural reorganizati
 
 ### 2. Certified Brand Ecosystem & Animated Marquee
 * **Animated Brand Ticker:** High-performance, seamless infinite-scroll **"Certified Brands"** marquee strip displaying verified manufacturer logos across the header and landing view.
-* **Authorized Brand Partnerships Highlighted:** Features leading regional and international brands across all 18 categories: **ABB, Schneider Electric, Siemens, Ducab, RAK Ceramics, Grohe, Geberit, Crane, KITZ, ITAP, Danfoss, Tyco, Victaulic, Naffco, Sika, Fosroc, Mapei, Jotun, Bosch, 3M, Knauf, Armstrong, Hepworth, RAKtherm, Tenaris, Outokumpu**.
+* **Authorized Brand Partnerships Highlighted:** Features leading regional and international brands across all 18 categories: **ABB, Schneider Electric, Siemens, Ducab, RAK Ceramics, Grohe, Geberit, Crane, KITZ, ITAP, Danfoss, Tyco, Shield, Sika, Fosroc, Mapei, Jotun, Bosch, 3M, Knauf, Armstrong, Hepworth, RAKtherm, Tenaris, Outokumpu**.
 
 ---
 
@@ -58,7 +58,7 @@ This document summarizes the comprehensive enhancements, structural reorganizati
 ### 4. Direct RFQ & Dual Communication Channels
 * **Dual Floating Action Contact Widget:**  
   * **Direct WhatsApp Inquiries:** Direct chat linked to `+971 56 567 0169` with pre-composed material inquiry prompts.
-  * **Instant Email Desk:** Direct email generation to `priya@prilok.com / sales@prilok.ae` with structured subject and body templates.
+  * **Instant Email Desk:** Direct email generation to `sales@prilok.ae` with structured subject and body templates.
 * **Digital Tender RFQ Cart:** Instant selection of items for Bill of Quantities (BOQ) estimation, bulk material quoting, and quotation request export.
 
 ---

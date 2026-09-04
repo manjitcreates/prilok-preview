@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="240" height="70">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C53030"/>
+      <stop offset="100%" stop-color="#9B2C2C"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield Icon -->
+  <g transform="translate(10, 8)">
+    <path d="M26 2 L48 10 C48 32 36 48 26 54 C16 48 4 32 4 10 Z" fill="url(#shieldGrad)" stroke="#742A2A" stroke-width="1.5"/>
+    <path d="M26 6 L44 13 C44 31 34 44 26 49 C18 44 8 31 8 13 Z" fill="#9B2C2C" opacity="0.4"/>
+    <path d="M26 12 L38 17 C38 28 32 37 26 41 C20 37 14 28 14 17 Z" fill="#FFFFFF"/>
+    <path d="M26 15 L35 19 C35 27 30 34 26 37 Z" fill="url(#shieldGrad)"/>
+  </g>
+  <!-- Text Label -->
+  <text x="72" y="38" font-family="'Plus Jakarta Sans', 'Arial Black', Impact, sans-serif" font-weight="900" font-size="28" fill="#1A202C" letter-spacing="1.5">SHIELD</text>
+  <text x="73" y="52" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="8.5" fill="#C53030" letter-spacing="1.2">PIPES &amp; FITTINGS</text>
+</svg>

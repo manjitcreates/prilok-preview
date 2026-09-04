@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+      <rect width="200" height="60" rx="6" fill="#ffffff"/>
+      <g transform="translate(25, 12)">
+        <rect x="5" y="2" width="32" height="32" rx="4" fill="#E30613"/>
+        <text x="21" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="20" fill="#ffffff" text-anchor="middle">+GF+</text>
+        <text x="45" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="16" fill="#1A202C">GEORG FISCHER</text>
+      </g>
+    </svg>

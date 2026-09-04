@@ -1,3 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" width="100%" height="100%">
-        <text x="50%" y="55%" font-family="'Arial Black', sans-serif" font-weight="900" font-size="30" fill="#15803D" text-anchor="middle" dominant-baseline="middle" letter-spacing="1">RAKTHERM</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+      <rect width="200" height="60" rx="6" fill="#ffffff"/>
+      <text x="100" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="24" text-anchor="middle">
+        <tspan fill="#C8102E">RAK</tspan><tspan fill="#003366">therm</tspan>
+      </text>
     </svg>
