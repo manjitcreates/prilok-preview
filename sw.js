@@ -1,6 +1,6 @@
 // PRILOK Building Materials Trading LLC - Service Worker
-// Version: 2026.08.31-v1
-const CACHE_NAME = 'prilok-cache-v1';
+// Version: 2026.10.12-v2
+const CACHE_NAME = 'prilok-cache-v2';
 
 const PRECACHE_URLS = [
   './',
