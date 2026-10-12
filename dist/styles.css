@@ -271,3 +271,70 @@ div[class*="from-brand-navy"] {
     background-color: #FFFFFF !important;
     color: #334155 !important;
 }
+
+/* ========================================================================== */
+/* LOCATION DATA & MAP SECTION STYLES                                         */
+/* ========================================================================== */
+.loc-card {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 1rem !important;
+    padding: 1.25rem 1.5rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    transition: border-color 0.2s ease, background 0.2s ease !important;
+}
+.loc-card:hover {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-color: rgba(245, 158, 11, 0.3) !important;
+}
+.loc-action-btn {
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    min-height: 42px !important;
+    max-width: 42px !important;
+    max-height: 42px !important;
+    border-radius: 50% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: #cbd5e1 !important;
+    transition: all 0.2s ease-in-out !important;
+    flex-shrink: 0 !important;
+}
+.loc-action-btn svg {
+    width: 18px !important;
+    height: 18px !important;
+    display: block !important;
+    flex-shrink: 0 !important;
+}
+.loc-action-btn:hover {
+    transform: translateY(-2px) scale(1.06) !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35) !important;
+}
+.loc-action-btn.btn-wa:hover {
+    background: #059669 !important;
+    border-color: #10b981 !important;
+    color: #ffffff !important;
+}
+.loc-action-btn.btn-phone:hover {
+    background: #d97706 !important;
+    border-color: #f59e0b !important;
+    color: #020617 !important;
+}
+.loc-action-btn.btn-email:hover {
+    background: #2563eb !important;
+    border-color: #3b82f6 !important;
+    color: #ffffff !important;
+}
+.loc-action-btn.btn-directions:hover {
+    background: #f59e0b !important;
+    border-color: #fbbf24 !important;
+    color: #020617 !important;
+}
