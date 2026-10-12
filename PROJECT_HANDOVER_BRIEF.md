@@ -4,7 +4,7 @@
 ---
 
 **Client:** PRILOK Building Materials Trading LLC  
-**Project:** B2B Digital Material Catalog & Corporate Inquiry Platform  
+**Project:** Digital Material Catalog & Corporate Inquiry Platform  
 **Deliverable Version:** Master 18-Category Production Release  
 **Date:** August 2026  
 
@@ -64,7 +64,7 @@ This document summarizes the comprehensive enhancements, structural reorganizati
 ---
 
 ### 5. Multi-View Experience & Executive Pitch Deck
-* **Main B2B Material Portal (`index.html`):** Full-scale interactive digital catalog with dynamic 18-category filtering, instant live search, and RFQ generation.
+* **Main Material Portal (`index.html`):** Full-scale interactive digital catalog with dynamic 18-category filtering, instant live search, and RFQ generation.
 * **Executive 27-Slide Catalogue (`catalogue.html`):** 27-slide landscape magazine-style procurement catalog ready for high-res PDF export and printing.
 * **Corporate Material View (`corporate.html`):** Streamlined executive view presenting PRILOK's capabilities, core lines, and supply reliability.
 * **Interactive Pitch Deck (`presentation.html`):** Full-screen animated corporate presentation deck for client meetings and tenders.
@@ -76,7 +76,7 @@ This document summarizes the comprehensive enhancements, structural reorganizati
 ### Package Contents & File Directory
 ```
 PRILOK_WEBSITE_PACKAGE/
-├── index.html                    # Main B2B Catalog & RFQ Portal (18 Categories)
+├── index.html                    # Main Catalog & RFQ Portal (18 Categories)
 ├── catalogue.html                # Executive 27-Slide Magazine Catalogue (PDF Ready)
 ├── corporate.html                # Corporate Material Showcase
 ├── presentation.html             # Interactive Pitch Deck

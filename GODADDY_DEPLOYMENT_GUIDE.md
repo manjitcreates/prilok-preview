@@ -1,4 +1,4 @@
-# PRILOK B2B Platform — GoDaddy Deployment & Hosting Guide
+# PRILOK Platform — GoDaddy Deployment & Hosting Guide
 
 This guide details how to deploy the PRILOK Digital Web Platform to **GoDaddy Web Hosting / cPanel** in under 3 minutes with full speed, security, and SEO optimization.
 
@@ -7,7 +7,7 @@ This guide details how to deploy the PRILOK Digital Web Platform to **GoDaddy We
 ### 📦 Ready-to-Upload Deployment Package
 * **Archive File:** `PRILOK_GODADDY_DEPLOYMENT.zip` (located in the project root)
 * **Contents:**
-  * `index.html` (Main B2B Material Portal & RFQ Cart)
+  * `index.html` (Main Material Portal & RFQ Cart)
   * `catalogue.html` (Executive 27-Slide Magazine Catalogue)
   * `corporate.html` (Corporate Showcase & Profile)
   * `presentation.html` (Full-screen Interactive Pitch Deck)
