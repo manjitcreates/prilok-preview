@@ -57,7 +57,7 @@ This document summarizes the comprehensive enhancements, structural reorganizati
 
 ### 4. Direct RFQ & Dual Communication Channels
 * **Dual Floating Action Contact Widget:**  
-  * **Direct WhatsApp Inquiries:** Direct chat linked to `+971 56 567 0169` with pre-composed material inquiry prompts.
+  * **Direct WhatsApp Inquiries:** Direct chat linked to `+971 58 550 7267` with pre-composed material inquiry prompts.
   * **Instant Email Desk:** Direct email generation to `sales@prilok.ae` with structured subject and body templates.
 * **Digital Tender RFQ Cart:** Instant selection of items for Bill of Quantities (BOQ) estimation, bulk material quoting, and quotation request export.
 

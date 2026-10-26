@@ -7010,11 +7010,11 @@ window.PRILOK_DATA = {
 
     "contact": {
 
-        "phone": "+971 56 567 0169",
+        "phone": "+971 58 550 7267",
 
-        "whatsapp": "+971 56 567 0169",
+        "whatsapp": "+971 58 550 7267",
 
-        "whatsappLink": "https://wa.me/971565670169",
+        "whatsappLink": "https://wa.me/971585507267",
 
         "email": "sales@prilok.ae",
 
